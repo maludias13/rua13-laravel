@@ -22,17 +22,25 @@ class UserFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition(): array
+   public function definition(): array
     {
-        return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
-            'remember_token' => Str::random(10),
-        ];
+    return [
+        'name' => fake()->name(),
+        'email' => fake()->unique()->safeEmail(),
+        'email_verified_at' => now(),
+        'password' => static::$password ??= Hash::make('password'),
+        'remember_token' => Str::random(10),
+        'cpf' => fake()->unique()->numerify('###########'),
+        'phone' => fake()->numerify('(##) #####-####'),
+        'birth_date' => fake()->date('Y-m-d', '2005-01-01'),
+        'cep' => fake()->numerify('#####-###'),
+        'number' => fake()->buildingNumber(),
+        'street' => fake()->streetName(),
+        'neighborhood' => fake()->word(),
+        'city' => fake()->city(),
+        'state' => fake()->stateAbbr(),
+    ];
     }
-
     /**
      * Indicate that the model's email address should be unverified.
      */
