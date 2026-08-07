@@ -20,5 +20,19 @@
             </div>
         </div>
     </div>
+      <div class="produtos">
+            <h2>PRODUTOS</h2>
+            <div class="container-produtos">
+                <div class="grid-produto">
+                <img src="{{ asset('media/produto1.jpg') }}" alt="produto 1">
+                <div class="ctd-produto">
+                <p>Nome do Produto</p>
+                <p>$89</p>
+                </div>
+                <button>Ver produto</button>
+            </div>
+            </div>
+        </div>
+        
 </body>
 </html>
