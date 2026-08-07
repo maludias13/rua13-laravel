@@ -1,6 +1,7 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
+    <img src="{{ asset('media/logo-rua13preta.png') }}" alt="Logo Rua 13" class="w-[265px] flex mb-6">
       <h1 class="font-roboto-semibold text-2xl font-bold">BEM VINDO DE VOLTA!</h1>
     <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -26,20 +27,20 @@
 
        
 
-        <div class="flex flex-col items-center justify-end mt-4">
+        <div class="flex flex-col items-end mt-4">
             @if (Route::has('password.request'))
-        <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-            {{ __('Forgot your password?') }}
+        <a class=" text-sm text-black font-roboto-regular hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+            {{ __('ESQUECEU SUA SENHA?') }}
         </a>
             @endif
     </div>
     <div class="mt-4">
-        <x-primary-button class="ms-3">
+        <x-primary-button class="">
         {{ __('ENTRAR') }}
         </x-primary-button>
     </div>
-    <div class="mt-4 text-center text-sm text-gray-600">
-    NÃO POSSUI CONTA? <a href="{{ route('register') }}" class="underline font-medium">CRIAR CONTA</a>
+    <div class="mt-4 text-center text-sm  font-roboto-regular text-black">
+    NÃO POSSUI CONTA? <a href="{{ route('register') }}" class="">CRIAR CONTA</a>
     </div>
     </form>
 </x-guest-layout>
