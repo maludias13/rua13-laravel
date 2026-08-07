@@ -8,8 +8,7 @@ class landingpageController extends Controller
 {
        public function index()
     {
-        $products = Product::paginate(8);
-
+        $products = Product::latest()->take(8)->get();
         return view('landingpage', ['products' => $products]);
     }
 }

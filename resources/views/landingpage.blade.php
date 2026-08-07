@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rua 13</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <div class="hero-banner">
@@ -38,9 +39,22 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eos harum officiis, dolores expedita saepe, velit architecto eveniet animi dolor laborum non debitis accusamus voluptatibus, autem repellendus nesciunt excepturi obcaecati?</p>
             <button>use o codigo "codelegal40" para obter desconto</button>
         </div>
-        <div class="colecoes-destaque">
-            <img src="{{ assets('media/colecao-verao.jpg" alt="verao">
-            <img src="{{ assets('media/inverno.jpg" alt="inverno">
+        <div class="final-page">
+            <div class="colecoes-destaque">
+            <img src="{{ asset('media/colecao-verao.jpg')}}" alt="verao">
+            <img src="{{ asset('media/colecaoinverno.jpg')}}" alt="inverno">
+        </div>
+        <div class="inscreva-se">
+           <div class="texto-i">
+             <h3>INSCREVA-SE PARA FICAR POR DENTRO DAS NOVIDADES</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur <br>laudantium sit iure dignissimos ratione voluptas veniam maxime debitis tempore!</p>
+           </div>
+           <div class="inputs-i">
+            <input type="text" placeholder="NOME">
+            <input type="text" placeholder="EMAIL">
+            <button>INSCREVA-SE</button>
+           </div>
+        </div>
         </div>
 </body>
 </html>
