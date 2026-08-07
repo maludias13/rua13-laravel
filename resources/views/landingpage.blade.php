@@ -6,6 +6,8 @@
     <title>Rua 13</title>
 </head>
 <body>
-
+    <div class="hero-banner">
+        
+    </div>
 </body>
 </html>
