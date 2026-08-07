@@ -7,7 +7,12 @@
 </head>
 <body>
     <div class="hero-banner">
-        
+        <div class="busca">
+            <input type="text" placeholder="Buscar produtos">
+        </div>
+        <div class="conteudo-hero">
+
+        </div>
     </div>
 </body>
 </html>
