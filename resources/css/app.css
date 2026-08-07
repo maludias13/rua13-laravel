@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Roboto Semibold';
+    src: url('/statics/RobotoSlab-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('/statics/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-roboto-semibold{
+    font-family: 'Roboto Semibold';
+}
+.font-roboto-medium{
+    font-family: 'Roboto Medium';
+}
