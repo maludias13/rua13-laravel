@@ -32,12 +32,12 @@
             {{ __('Forgot your password?') }}
         </a>
             @endif
-
+    </div>
+    <div class="mt-4">
         <x-primary-button class="ms-3">
         {{ __('ENTRAR') }}
         </x-primary-button>
     </div>
-
     <div class="mt-4 text-center text-sm text-gray-600">
     NÃO POSSUI CONTA? <a href="{{ route('register') }}" class="underline font-medium">CRIAR CONTA</a>
     </div>
