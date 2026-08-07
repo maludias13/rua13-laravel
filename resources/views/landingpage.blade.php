@@ -38,5 +38,9 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eos harum officiis, dolores expedita saepe, velit architecto eveniet animi dolor laborum non debitis accusamus voluptatibus, autem repellendus nesciunt excepturi obcaecati?</p>
             <button>use o codigo "codelegal40" para obter desconto</button>
         </div>
+        <div class="colecoes-destaque">
+            <img src="{{ assets('media/colecao-verao.jpg" alt="verao">
+            <img src="{{ assets('media/inverno.jpg" alt="inverno">
+        </div>
 </body>
 </html>
