@@ -24,14 +24,16 @@
       <div class="produtos">
             <h2>PRODUTOS</h2>
             <div class="container-produtos">
+                @foreach ($products as $product)
                 <div class="grid-produto">
-                <img src="{{ asset('media/produto1.jpg') }}" alt="produto 1">
+                <img src="{{ asset('storage/' . $product->photo) }}" alt="{{$product->name}}">
                 <div class="ctd-produto">
-                <p>Nome do Produto</p>
-                <p>$89</p>
+                <p>{{$product->name}}</p>
+                <p>{{format_price($product->price)}}</p>
                 </div>
                 <button>Ver produto</button>
             </div>
+            @endforeach
             </div>
         </div>
         <div class="promocao">
