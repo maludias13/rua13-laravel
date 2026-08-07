@@ -1,0 +1,14 @@
+@font-face{
+    font-family: 'Roboto-Medium';
+  src: url(' static/Roboto-Slab-Medium.ttf') ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+  font-family: 'Roboto-Medium';
+}
