@@ -1,8 +1,8 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-    <img src="{{ asset('media/logo-rua13preta.png') }}" alt="Logo Rua 13" class="w-[265px] flex mb-6">
-      <h1 class="font-roboto-semibold text-2xl font-bold">BEM VINDO DE VOLTA!</h1>
+    <img src="{{ asset('media/logo-rua13preta.png') }}" alt="Logo Rua 13" class="w-[285px] flex mb-2">
+      <h1 class="font-roboto-semibold text-2xl font-bold text-[25px] pb-2">BEM VINDO DE VOLTA!</h1>
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
@@ -29,13 +29,13 @@
 
         <div class="flex flex-col items-end mt-4">
             @if (Route::has('password.request'))
-        <a class=" text-sm text-black font-roboto-regular hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+        <a class=" text-sm text-black font-roboto-regular hover:text-gray-900 rounded-md focus:outline-none" href="{{ route('password.request') }}">
             {{ __('ESQUECEU SUA SENHA?') }}
         </a>
             @endif
     </div>
     <div class="mt-4">
-        <x-primary-button class="">
+        <x-primary-button class="text-[15px]">
         {{ __('ENTRAR') }}
         </x-primary-button>
     </div>

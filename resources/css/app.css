@@ -5,20 +5,27 @@
 @font-face {
     font-family: 'Roboto Semibold';
     src: url('/statics/RobotoSlab-SemiBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+ 
 }
 @font-face {
     font-family: 'Roboto Medium';
     src: url('/statics/RobotoSlab-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+ 
 }
 @font-face {
     font-family: 'Roboto Regular';
     src: url('/statics/RobotoSlab-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+ 
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('/statics/RobotoSlab-Bold.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Roboto EBold';
+    src: url('/statics/RobotoSlab-ExtraBold.ttf') format('truetype');
+  
 }
 .font-roboto-semibold{
     font-family: 'Roboto Semibold';
@@ -28,6 +35,12 @@
 }
 .font-roboto-regular{
     font-family: 'Roboto Regular';
+}
+.font-roboto-bold{
+    font-family: 'Roboto Bold';
+}
+.font-roboto-ebold{
+    font-family: 'Roboto EBold';
 }
 .imagem-login1{
     width: 100%;
