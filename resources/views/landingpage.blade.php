@@ -29,8 +29,9 @@
        </div>
         <div class="conteudo-hero">
             <div class="texto-hero">
-                <h1>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur <br>laudantium sit iure dignissimos ratione voluptas veniam maxime debitis tempore!</p>
+                <h1>ESSENCIAL PARA QUEM VIVE <br>  A RUA</h1>
+                <p>Estilo, atitude e autenticidade 
+                para <br> acompanhar o seu corre.</p>
             </div>
             <div class="img-hero">
                 <img src="{{ asset('media/imagem-hero.png') }}" alt="img-hero">
