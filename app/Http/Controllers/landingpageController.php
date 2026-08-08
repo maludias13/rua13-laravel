@@ -1,14 +1,24 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Product;
 use Illuminate\Http\Request;
 
 class landingpageController extends Controller
 {
-       public function index()
+    public function index(Request $request)
     {
-        $products = Product::latest()->take(8)->get();
+        $search = $request->query('search');
+        $categoryId = $request->query('categoria');
+
+        $products = Product::query()
+            ->when($search, fn ($query) => $query->where('name', 'like', "%{$search}%"))
+            ->when($categoryId, fn ($query) => $query->where('category_id', $categoryId))
+            ->latest()
+            ->take(8)
+            ->get();
+
         return view('landingpage', ['products' => $products]);
     }
 }
