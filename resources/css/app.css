@@ -113,7 +113,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    font-family: 'Roboto Extrabold';
+    font-family: 'Roboto Ebold';
 
 }
 .ver-produtos button{
@@ -126,12 +126,27 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
+.grid-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 .grid-produto img{
     width: 400px;
     height: 400px;
+}
+.grid-produto button{
+    width: 40%;
+    background-color: #121212;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
 }
 .ctd-produto{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: 'Roboto Ebold';
 }
