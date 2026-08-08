@@ -47,19 +47,38 @@
     height: 100%;
 }
 .hero-banner{
+    height: 30%;
     background-color: #D9D9D9;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .i-busca{
-    border-radius: 30%;
+    width: 100%;
+    border-radius: 10px;
     border-color: #737991;
     background-color: #D9D9D9;
     
+}
+.busca{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.filtro-busca{
+    position: absolute;
+    display: block;
 }
 .conteudo-hero{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0 5rem;
+}
+.img-hero{
+    width: 50%;
+    height: 100%;
+
 }

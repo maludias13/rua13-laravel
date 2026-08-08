@@ -14,7 +14,7 @@
         </form>
           <div x-data="{ open: false }" class="relative">
         <button type="button" @click="open = !open" aria-label="Filtrar por categoria">
-            <img src="{{ asset('media/filtro-de-busca.svg') }}" alt="filtro-de-busca">
+            <img src="{{ asset('media/filtro-de-busca.svg') }}" alt="filtro-de-busca" class="filtro-busca">
         </button>
 
         <div x-show="open" @click.outside="open = false" class="filtro-menu">
