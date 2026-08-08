@@ -10,11 +10,11 @@
     <div class="hero-banner">
        <div class="busca">
          <form method="GET" action="{{ route('landingpage') }}">
-            <input type="text" name="search" value="{{ request('search')}}" class="i-busca"placeholder="Buscar produtos">
+            <input type="text" name="search" value="{{ request('search')}}" class="filtro-busca"placeholder="Buscar produtos">
         </form>
           <div x-data="{ open: false }" class="relative">
         <button type="button" @click="open = !open" aria-label="Filtrar por categoria">
-            <img src="{{ asset('media/filtro-de-busca.svg') }}" alt="filtro-de-busca" class="filtro-busca">
+            <img src="{{ asset('media/filtro-de-busca.svg') }}" alt="filtro-de-busca" class="btn-busca">
         </button>
 
         <div x-show="open" @click.outside="open = false" class="filtro-menu">
