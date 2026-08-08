@@ -43,12 +43,13 @@
             <div class="container-produtos">
                 @foreach ($products as $product)
                 <div class="grid-produto">
-                <img src="{{ asset('media/' . $product->photo) }}" alt="{{$product->name}}">
-                <div class="ctd-produto">
-                <p>{{$product->name}}</p>
-                <p>{{format_price($product->price)}}</p>
+                    <img src="{{ asset('media/' . $product->photo) }}" alt="{{$product->name}}">
+                    <div class="ctd-produto">
+                        <p>{{$product->name}}</p>
+                        <p>{{format_price($product->price)}}</p>
+                        <button>Ver produto</button>
+                
                 </div>
-                <button>Ver produto</button>
             </div>
             @endforeach
             </div>
