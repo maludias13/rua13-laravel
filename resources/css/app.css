@@ -185,19 +185,31 @@
     justify-content: center;
 }
 .colecoes-destaque img{
-    width: 35%;
+    width: 40%;
     height: 550px;
     object-fit: cover;
 }
 .inscreva-se{
     display: flex;
-    
+    font-family: 'Roboto Regular';
+    gap: 10px;
 }
 .inputs-i{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 2px;
 }
 .inputs-i input{
     border: 1px solid black;
+    font-size: 10px;
+}
+.inputs-i input::placeholder{
+    color: black;
+}
+.inputs-i button{
+    background-color: #121212;
+    width: 40%;
+    color: white;
+    font-size: 10px;
 }
