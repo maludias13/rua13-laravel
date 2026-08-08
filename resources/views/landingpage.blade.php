@@ -47,9 +47,8 @@
                     <div class="ctd-produto">
                         <p>{{$product->name}}</p>
                         <p>{{format_price($product->price)}}</p>
+                        </div>
                         <button>Ver produto</button>
-                
-                </div>
             </div>
             @endforeach
             </div>

@@ -111,8 +111,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 12px;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-family: 'Roboto Extrabold';
+
 }
 .ver-produtos button{
     display: flex;
@@ -127,4 +129,9 @@
 .grid-produto img{
     width: 400px;
     height: 400px;
+}
+.ctd-produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
