@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -19,6 +20,11 @@ class landingpageController extends Controller
             ->take(8)
             ->get();
 
-        return view('landingpage', ['products' => $products]);
+        $categories = Category::all();
+
+        return view('landingpage', [
+        'products' => $products,
+        'categories' => $categories,
+]);
     }
 }

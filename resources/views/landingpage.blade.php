@@ -8,9 +8,25 @@
 </head>
 <body>
     <div class="hero-banner">
-        <form method="GET" action="{{ route('landingpage') }}" class="busca">
-            <input type="text" name="search" value="{{ request('search')}}" placeholder="Buscar produtos">
+       <div class="busca">
+         <form method="GET" action="{{ route('landingpage') }}">
+            <input type="text" name="search" value="{{ request('search')}}" class="filtro-busca"placeholder="Buscar produtos">
         </form>
+          <div x-data="{ open: false }" class="relative">
+        <button type="button" @click="open = !open" aria-label="Filtrar por categoria">
+            <img src="{{ asset('media/filtro-de-busca.svg') }}" alt="filtro-de-busca">
+        </button>
+
+        <div x-show="open" @click.outside="open = false" class="filtro-menu">
+            <a href="{{ route('landingpage') }}">Todas as categorias</a>
+            @foreach ($categories as $category)
+                <a href="{{ route('landingpage', ['categoria' => $category->id, 'search' => request('search')]) }}">
+                    {{ $category->name }}
+                </a>
+            @endforeach
+        </div>
+        </div>
+       </div>
         <div class="conteudo-hero">
             <div class="texto-hero">
                 <h1>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</h1>
