@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="hero-banner">
-        <div class="busca">
-            <input type="text" placeholder="Buscar produtos">
-        </div>
+        <form method="GET" action="{{ route('landingpage') }}" class="busca">
+            <input type="text" name="search" value="{{ request('search')}}" placeholder="Buscar produtos">
+        </form>
         <div class="conteudo-hero">
             <div class="texto-hero">
                 <h1>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</h1>
