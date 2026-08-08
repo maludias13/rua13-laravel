@@ -39,7 +39,7 @@
         </div>
     </div>
       <div class="produtos">
-            <h2>PRODUTOS</h2>
+            <div class="ver-produtos"><h2>PRODUTOS</h2> <button><img src="{{ asset('media/seta.svg')}}" alt="seta">Ver produtos</button></div>
             <div class="container-produtos">
                 @foreach ($products as $product)
                 <div class="grid-produto">
