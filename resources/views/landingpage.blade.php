@@ -10,7 +10,7 @@
     <div class="hero-banner">
        <div class="busca">
          <form method="GET" action="{{ route('landingpage') }}">
-            <input type="text" name="search" value="{{ request('search')}}" class="filtro-busca"placeholder="Buscar produtos">
+            <input type="text" name="search" value="{{ request('search')}}" class="i-busca"placeholder="Buscar produtos">
         </form>
           <div x-data="{ open: false }" class="relative">
         <button type="button" @click="open = !open" aria-label="Filtrar por categoria">
