@@ -105,6 +105,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 2rem;
 }
 .ver-produtos{
     width: 100%;
@@ -162,4 +163,9 @@
     color: white;
     justify-content: center;
 }
-
+.promocao button{
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 10px;
+}

@@ -56,8 +56,7 @@
         <div class="promocao">
             <div class="texto-promo">
                 <h3>PROMO! PROMO! PROMO!</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eos harum officiis, dolores expedita saepe, velit architecto eveniet animi dolor laborum non debitis accusamus voluptatibus, autem repellendus nesciunt excepturi obcaecati?</p>
-            
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eos harum officiis, dolores expedita saepe, velit architecto eveniet animi dolor laborum non debitis accusamus voluptatibus, autem repellendus nesciunt excepturi obcaecati?</p>
             </div>
             <button>use o codigo "codelegal40" para obter desconto</button>
         </div>
