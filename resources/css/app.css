@@ -179,15 +179,25 @@
     overflow-x: hidden;
 }
 .colecoes-destaque{
-    width: 500px;
-    height: 450px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.colecoes-destaque img{
+    width: 35%;
+    height: 550px;
+    object-fit: cover;
 }
 .inscreva-se{
     display: flex;
+    
 }
 .inputs-i{
     display: flex;
     flex-direction: column;
+    gap: 2px;
+}
+.inputs-i input{
+    border: 1px solid black;
 }
