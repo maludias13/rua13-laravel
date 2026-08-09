@@ -270,3 +270,7 @@
     padding: 40px 48px;
     font-family: 'Roboto Regular';
 }
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
