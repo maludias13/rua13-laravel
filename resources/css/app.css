@@ -225,21 +225,38 @@
     font-size: 13px;
     padding: 10px;
     white-space: nowrap;
+
 }
-.navbar{
-    display: flex;
+.navbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
-    justify-content: space-between;
     padding: 16px 48px;
+    font-family: 'Roboto Medium';
 }
-.icons-navb{
+
+.navbar-nav {
     display: flex;
-    width: 30px;
-    height: 30px;
-    gap:10px;
+    gap: 24px;
+    justify-self: start;
+    flex-wrap: wrap;
 }
 .navlogo{
     width: 200px;
+}
+.navbar > a {
+    justify-self: center;
+}
+
+.icons-navb {
     display: flex;
     align-items: center;
+    gap: 10px;
+    justify-self: end;
+}
+
+.icons-navb img {
+    width: 30px;
+    height: 30px;
 }
