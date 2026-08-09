@@ -226,3 +226,9 @@
     padding: 10px;
     white-space: nowrap;
 }
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+}
