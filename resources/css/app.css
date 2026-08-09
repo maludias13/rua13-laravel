@@ -264,15 +264,16 @@
      width: 100%;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-    align-items: center;
+    align-items: top;
     background-color: #121212;
     color: white;
-    padding: 40px 48px;
+    padding: 5rem 4rem 1rem 5rem;
     font-family: 'Roboto Regular';
 }
 .footer-links{
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
 }
 .footer-social-icons{
     display: flex;
