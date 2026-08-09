@@ -278,3 +278,9 @@
     display: flex;
     justify-content: space-between;
 }
+.footer-logo{
+    padding: 0 2rem;
+    width: 300px;
+    justify-self: end;
+}
+
