@@ -160,14 +160,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
     justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
 }
 .promocao button{
     background-color: white;
     color: black;
     padding: 5px 15px;
     border-radius: 10px;
+}
+.text-i{
+    padding: 0 10rem;
 }
 .final-page{
     width: 100%;

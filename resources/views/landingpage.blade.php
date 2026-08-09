@@ -56,7 +56,7 @@
         <div class="promocao">
             <div class="texto-promo">
                 <h3>PROMO! PROMO! PROMO!</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eos harum officiis, dolores expedita saepe, velit architecto eveniet animi dolor laborum non debitis accusamus voluptatibus, autem repellendus nesciunt excepturi obcaecati?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Quaerat eos harum officiis, dolores expedita saepe, velit architecto eveniet animi dolo</p>
             </div>
             <button>use o codigo "codelegal40" para obter desconto</button>
         </div>
@@ -68,7 +68,7 @@
         <div class="inscreva-se">
            <div class="texto-i">
              <h3>INSCREVA-SE PARA FICAR POR DENTRO DAS NOVIDADES</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur <br>laudantium sit iure dignissimos ratione voluptas veniam maxime debitis tempore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Pariatur laudantium sit iure dignissimos</p>
            </div>
            <div class="inputs-i">
             <input type="text" placeholder="NOME">
