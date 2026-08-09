@@ -1,4 +1,4 @@
-@props(['variant' => 'preta'])
+@props(['variant' => 'branca'])
 <header class="navbar navbar-{{ $variant }}">
     <nav class="navbar-nav">
         <a href="#">Lançamentos</a>
