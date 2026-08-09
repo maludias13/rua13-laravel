@@ -15,4 +15,8 @@
             <a href="#"><img src="{{ asset('media/whatsapp.svg') }}" alt="WhatsApp"></a>
         </div>
     </div>
+    <div class="footer-logo">
+        <img src="{{ asset('media/logo-rua13brancastt.png') }}" alt="Rua 13">
+        
+    </div>
 </footer>
