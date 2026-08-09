@@ -11,12 +11,13 @@
     <div class="footer-social">
         <p>Redes Sociais</p>
         <div class="footer-social-icons">
+            <a href="#"><img src="{{ asset('media/Link.svg') }}" alt="Instagram"></a>
             <a href="#"><img src="{{ asset('media/instagram.svg') }}" alt="Instagram"></a>
             <a href="#"><img src="{{ asset('media/whatsapp.svg') }}" alt="WhatsApp"></a>
         </div>
     </div>
     <div class="footer-logo">
-        <img src="{{ asset('media/logo-rua13brancastt.png') }}" alt="Rua 13">
+        <img src="{{ asset('media/logo-rua-13stt.png') }}" alt="Rua 13">
         
     </div>
 </footer>
