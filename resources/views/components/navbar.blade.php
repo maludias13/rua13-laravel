@@ -11,7 +11,7 @@
     </a>
     <div class="icons-navb">
         <img src="{{ asset('media/Heartblack.svg') }}" alt="coracao">
-        <img src="{{ asset('media/peoleblack.svg') }}" alt="pessoa">
+        <img src="{{ asset('media/peopleblack.svg') }}" alt="pessoa">
         <img src="{{ asset('media/CartCheckblack.svg') }}" alt="carrinho">
     </div>
 </header>
