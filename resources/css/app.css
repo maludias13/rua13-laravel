@@ -1,3 +1,228 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Roboto Semibold';
+    src: url('/statics/RobotoSlab-SemiBold.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('/statics/RobotoSlab-Light.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('/statics/RobotoSlab-Medium.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('/statics/RobotoSlab-Regular.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('/statics/RobotoSlab-Bold.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Roboto EBold';
+    src: url('/statics/RobotoSlab-ExtraBold.ttf') format('truetype');
+  
+}
+.font-roboto-semibold{
+    font-family: 'Roboto Semibold';
+}
+.font-roboto-medium{
+    font-family: 'Roboto Medium';
+}
+.font-roboto-regular{
+    font-family: 'Roboto Regular';
+}
+.font-roboto-bold{
+    font-family: 'Roboto Bold';
+}
+.font-roboto-ebold{
+    font-family: 'Roboto EBold';
+}
+.imagem-login1{
+    width: 100%;
+    height: 100%;
+}
+.hero-banner{
+    height: 30%;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.busca{
+    width: 75%;;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+    background-color: #D9D9D9;
+    border: 1px solid #737991;
+    border-radius: 50px;
+    padding-right: 10px;
+}
+.busca form {
+    flex: 1;
+}
+
+.filtro-busca{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+.conteudo-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5rem;
+}
+.img-hero{
+    width: 380px;
+    height: 100%;
+
+}
+.texto-hero h1{
+    font-family: 'Roboto Semibold';
+    font-size: 25px;
+}
+.texto-hero p{
+    font-family: 'Roboto Regular';
+    font-size: 16px;
+}
+.produtos{
+    width: 100%;
+    padding: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.ver-produtos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-family: 'Roboto Ebold';
+
+}
+.ver-produtos button{
+    display: flex;
+    border: 1px solid black;
+}
+.container-produtos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.grid-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.grid-produto img{
+    width: 350px;
+    height: 350px;
+}
+.grid-produto button{
+    width: 40%;
+    background-color: #121212;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.ctd-produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto Ebold';
+}
+.promocao{
+    width: 100%;
+    height: 400px;
+    background-image: url('/media/produtospromocionais.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+}
+.promocao button{
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.text-i{
+    padding: 0 10rem;
+}
+.final-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+    overflow-x: hidden;
+}
+.colecoes-destaque{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colecoes-destaque img{
+    width: 45%;
+    height: 600px;
+    object-fit: cover;
+}
+.inscreva-se{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: 'Roboto Regular';
+    margin-top: 4rem;
+    padding: 0 3.75rem;
+}
+.inputs-i{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+}
+.inputs-i input{
+    border: 1px solid black;
+    font-size: 10px;
+    width: 300px;
+}
+.inputs-i input::placeholder{
+    color: black;
+}
+.inputs-i button{
+    background-color: #121212;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+    white-space: nowrap;
+}
