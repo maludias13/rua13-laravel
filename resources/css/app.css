@@ -232,3 +232,13 @@
     justify-content: space-between;
     padding: 16px 48px;
 }
+.icons-navb{
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+.navlogo{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}

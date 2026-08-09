@@ -6,8 +6,8 @@
         <a href="#">Feminino</a>
         <a href="#">Acessórios</a>
     </nav>
-    <a href="{{ route('landingpage')}}">
-        <img src="{{ asset('media/logo-rua13branca.png')}}" alt="logo-branca">
+    <a href="{{ route('landingpage')}}" class="navlogo">
+        <img src="{{ asset('media/logo-rua13preta.png')}}" alt="logo-branca">
     </a>
     <div class="icons-navb">
         <img src="{{ asset('media/Heartblack.svg') }}" alt="coracao">
