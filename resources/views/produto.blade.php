@@ -10,11 +10,17 @@
     <div class="pagprodutos-container">
         <div class="prodfotos">
             <div class="foto1">
-                <img src="" alt="">
+                <img src="{{ asset('media/' . $product->photos->first()->photo) }}" alt="{{ $product->name }}">
             </div>
             <div class="fotolados">
-                <img src="" alt="">
-                <img src="" alt="">
+                @foreach ($product->photos->skip(1) as $photo)
+                    <img src="{{ asset('media/' . $photo->photo) }}" alt="{{ $product->name }}">
+                @endforeach
+            </div>
+        </div>
+        <div class="conteudo-pagproduto">
+            <div class="peca-preco">
+                <h1></h1>
             </div>
         </div>
     </div>

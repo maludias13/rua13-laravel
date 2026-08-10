@@ -42,6 +42,10 @@ class ProductSeeder extends Seeder
             ]);
 
             $newProduct->sizes()->attach($allSizes);
+
+            foreach (range(1, 3) as $i) {
+                $newProduct->photos()->create(['photo' => $product['photo']]);
+            }
         }
     }
 }
