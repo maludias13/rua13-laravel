@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('products', function (Blueprint $table) {
-            //
+        $table->decimal('rating', 2, 1)->nullable();
+        $table->unsignedInteger('reviews_count')->default(0);
         });
     }
 
