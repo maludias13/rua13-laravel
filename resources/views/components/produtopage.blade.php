@@ -7,6 +7,16 @@
 </head>
 <body>
     <x-navbar variant="preta"/>
-    
+    <div class="pagprodutos-container">
+        <div class="prodfotos">
+            <div class="foto1">
+                <img src="" alt="">
+            </div>
+            <div class="fotolados">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
