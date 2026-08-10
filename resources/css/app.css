@@ -227,7 +227,7 @@
     white-space: nowrap;
 
 }
-.navbar {
+.navbar-branca {
     width: 100%;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
@@ -235,7 +235,16 @@
     padding: 16px 48px;
     font-family: 'Roboto Medium';
 }
-
+.navbar-preta {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    padding: 16px 48px;
+    font-family: 'Roboto Medium';
+    background-color: #121212;
+    color: #fff;
+}
 .navbar-nav {
     display: flex;
     gap: 24px;
