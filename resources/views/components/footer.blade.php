@@ -8,7 +8,7 @@
         <a href="#">.Coleções</a>
         <a href="#">.Contato</a>
     </nav>
-    <div class="footer-social">
+    <div class="footer-social"> 
         <p>Redes Sociais</p>
         <div class="footer-social-icons">
             <a href="#"><img src="{{ asset('media/Link.svg') }}" alt="Instagram"></a>
