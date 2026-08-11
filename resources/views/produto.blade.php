@@ -30,15 +30,39 @@
                 <span>{{ $product->reviews_count }} reviews</span>
             </div>
             <div class="tamanho-pagproduto">
+                <h3>Tamanho</h3>
                 <div class="lista-tam">
                     @foreach($product->sizes as $size)
                     <button type="button">{{$size->name}}</button>
                     @endforeach
                 </div>
                 <div class="quantidade">
+                    <h3>Quantidade</h3>
+                    <div class="botoesqtd">
                     <button>-</button>
                     <p>1</p>
                     <button>+</button>
+                    </div>
+                </div>
+                <div class="descricaoprod">
+                    <h3>Descrição</h3>
+                    <p>{{$product->description}}</p>
+                </div>
+                <div class="contatovend">
+                    <h3>Contato</h3>
+                    <p>{{$product->user->name}}</p>
+                    <h3>Telefone</h3>
+                    <p>{{format_phone($product->user->phone)}}</p>
+                </div>
+                <div class="entregas-devol">
+                    <div class="entregas">
+                        <h3>Entregas Rapidas</h3>
+                        <p>Enviamos seu pedido com rapidez e segurança.</p>
+                    </div>
+                    <div class="dev">
+                        <h3>Devoluções Grátis</h3>
+                        <p>Solicite sua devolução de forma simples e segura.</p>
+                    </div>
                 </div>
             </div>
         </div>
