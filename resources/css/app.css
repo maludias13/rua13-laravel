@@ -8,6 +8,7 @@
     align-items: center;
     background-image: linear-gradient(to right, #0E0F11, #22242B, #25272F, #25272F, #2A2D36, #31343E, #2B2D36, #737991);
     color: white;
+    padding: 4rem 0;
 }
 .prodfotos{
     width: 100%;
@@ -22,7 +23,7 @@
     align-items: center;
 }
 .foto1 img{
-    width: 400px;
+    width: 570px;
     height: 50%;
 }
 .fotolados{
