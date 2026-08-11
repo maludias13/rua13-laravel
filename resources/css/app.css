@@ -3,32 +3,32 @@
 @tailwind utilities;
 @font-face {
     font-family: 'Roboto Semibold';
-    src: url('/statics/RobotoSlab-SemiBold.ttf') format('truetype');
+    src: url('/static/RobotoSlab-SemiBold.ttf') format('truetype');
  
 }
 @font-face {
     font-family: 'Roboto Light';
-    src: url('/statics/RobotoSlab-Light.ttf') format('truetype');
+    src: url('/static/RobotoSlab-Light.ttf') format('truetype');
  
 }
 @font-face {
     font-family: 'Roboto Medium';
-    src: url('/statics/RobotoSlab-Medium.ttf') format('truetype');
+    src: url('/static/RobotoSlab-Medium.ttf') format('truetype');
  
 }
 @font-face {
     font-family: 'Roboto Regular';
-    src: url('/statics/RobotoSlab-Regular.ttf') format('truetype');
+    src: url('/static/RobotoSlab-Regular.ttf') format('truetype');
  
 }
 @font-face {
     font-family: 'Roboto Bold';
-    src: url('/statics/RobotoSlab-Bold.ttf') format('truetype');
+    src: url('/static/RobotoSlab-Bold.ttf') format('truetype');
 
 }
 @font-face {
     font-family: 'Roboto EBold';
-    src: url('/statics/RobotoSlab-ExtraBold.ttf') format('truetype');
+    src: url('/static/RobotoSlab-ExtraBold.ttf') format('truetype');
   
 }
 .pagprodutos-container {
@@ -39,6 +39,12 @@
     background-image: linear-gradient(to right, #0E0F11, #22242B, #25272F, #25272F, #2A2D36, #31343E, #2B2D36, #737991);
     color: white;
     padding: 4rem 0;
+}
+.pagprodutos-container h3{
+    font-family: 'Roboto Semibold';
+}
+.pagprodutos-container p{
+    font-family: 'Roboto Light';
 }
 .prodfotos{
     width: 100%;
@@ -73,7 +79,7 @@
 .peca-preco{
     width: 100%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .avaliacao-pagproduto{
     display: flex;
@@ -105,6 +111,7 @@
 }
 .comprar-prod{
     display: flex;
+    font-family: 'Roboto Semibold';
 }
 .adquirir{
     background-color: #48217B;
