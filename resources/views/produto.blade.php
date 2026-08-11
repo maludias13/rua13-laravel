@@ -24,8 +24,12 @@
                 <h3>{{format_price($product->price)}}</h3>
             </div>
             <div class="avaliacao">
-                
+                @for($i=1; $i<=5; $i++)
+                    <span>{{$i <= round($product->rating) ?  '★' : '☆' }}</span>                 
+                @endfor
+                <span>{{ $product->reviews_count }} reviews</span>
             </div>
+            
         </div>
     </div>
 </body>
