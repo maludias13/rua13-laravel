@@ -27,10 +27,32 @@ class ProductManagementController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+
     public function store(Request $request)
     {
-        //
+    $request->validate([
+        'name' => 'required|string|max:255',
+        'description' => 'required|string',
+        'price' => 'required|numeric',
+        'quantity' => 'required|integer',
+        'category_id' => 'required|exists:categories,id',
+        'photo' => 'required|image|max:2048',
+    ]);
+
+    $photoPath = $request->file('photo')->store('products', 'public');
+
+    auth()->user()->products()->create([
+        'category_id' => $request->category_id,
+        'name' => $request->name,
+        'description' => $request->description,
+        'price' => $request->price,
+        'quantity' => $request->quantity,
+        'photo' => basename($photoPath),
+    ]);
+
+    return redirect()->route('produtos.index')->with('status', 'Produto criado com sucesso!');
     }
+    
 
     /**
      * Display the specified resource.
