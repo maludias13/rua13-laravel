@@ -13,6 +13,15 @@
         @error('name')
         <span class="error">{{$message}}</span>
         @enderror
+        <label>Categoria</label>
+            <select name="category_id">
+                <option value="">Selecione</option>
+                @foreach ($categories as $category)
+                    <option value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                        {{ $category->name }}
+                    </option>
+                @endforeach
+            </select>
     </form>
 </body>
 </html>
