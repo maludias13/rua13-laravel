@@ -56,10 +56,14 @@
                     <p>{{$product->description}}</p>
                 </div>
                 <div class="contatovend">
+                    <div class="contato">
                     <h3>Contato</h3>
                     <p>{{$product->user->name}}</p>
+                    </div>
+                    <div class="telefone">
                     <h3>Telefone</h3>
                     <p>{{format_phone($product->user->phone)}}</p>
+                    </div>
                 </div>
                 <div class="entregas-devol">
                     <div class="entregas">

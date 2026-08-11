@@ -144,6 +144,11 @@
 .contatovend h3{
     font-size: 25px;
 }
+.contatovend{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .entregas-devol{
     display: flex;
     gap:20px;
