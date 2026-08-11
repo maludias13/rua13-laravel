@@ -21,6 +21,7 @@
 .foto1{
     display: flex;
     align-items: center;
+    padding-bottom: 2rem;
 }
 .foto1 img{
     width: 570px;
@@ -28,9 +29,10 @@
 }
 .fotolados{
     display: flex;
+    gap: 1rem;
 }
 .fotolados img{
-    width: 300px;
+    width: 275px;
     height: 100%;
 }
 .conteudo-pagproduto{
