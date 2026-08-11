@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductManagementController;
 
+Route::resource('produtos', ProductManagementController::class);
 Route::get('/', function () {
     return view('welcome');
 });
