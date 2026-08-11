@@ -42,9 +42,18 @@
     display: flex;
     gap: 15px;
 }
-.botoesqtd{
+.lista-tam{
     display: flex;
-    
+    gap: 10px;
+}
+.lista-tam button{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+.botoesqtd{
+    display: flex;   
 }
 .botoesqtd button{
     border: 1px solid #fff;
