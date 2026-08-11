@@ -42,3 +42,18 @@
     display: flex;
     gap: 15px;
 }
+.botoesqtd{
+    display: flex;
+    
+}
+.botoesqtd button{
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+.botoesqtd p{
+    border: 1px solid #fff;
+    padding: 0.5rem; border: 1px solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
