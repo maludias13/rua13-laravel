@@ -1,6 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'Roboto Semibold';
+    src: url('/statics/RobotoSlab-SemiBold.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('/statics/RobotoSlab-Light.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('/statics/RobotoSlab-Medium.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('/statics/RobotoSlab-Regular.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('/statics/RobotoSlab-Bold.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'Roboto EBold';
+    src: url('/statics/RobotoSlab-ExtraBold.ttf') format('truetype');
+  
+}
 .pagprodutos-container {
     width: 100%;
     height: 100%;
