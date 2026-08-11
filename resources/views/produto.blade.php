@@ -32,11 +32,13 @@
             </div>
             <div class="tamanho-pagproduto">
                 <h3>Tamanho</h3>
-                <div class="lista-tam">
+                    <div class="lista-tam">
                     @foreach($product->sizes as $size)
                     <button type="button">{{$size->name}}</button>
                     @endforeach
-                </div>
+                    </div>
+
+            </div>
                 <div class="quantidade">
                     <h3>Quantidade</h3>
                     <div class="botoesqtd">
