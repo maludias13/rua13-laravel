@@ -70,6 +70,16 @@
     padding: 0.5rem 1rem 0.5rem 1rem;
     text-align: center;
 }
+.comprar-prod{
+    display: flex;
+}
+.adquirir{
+    background-color: #48217B;
+    color: #fff;
+}
+.fav{
+    border: 1px solid #fff;
+}
 .entregas-devol{
     display: flex;
     gap:5px;

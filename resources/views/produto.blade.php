@@ -45,6 +45,10 @@
                     <button>+</button>
                     </div>
                 </div>
+                <div class="comprar-prod">
+                    <button class="adquirir" type="button">ADQUIRIR</button>
+                    <button class="fav" type="button"><img src="{{ asset('media/Heart.svg')}}" alt="favoritos"></button>
+                </div>
                 <div class="descricaoprod">
                     <h3>Descrição</h3>
                     <p>{{$product->description}}</p>
