@@ -23,13 +23,24 @@
                 <h3>{{$product->name}}</h3>
                 <h3>{{format_price($product->price)}}</h3>
             </div>
-            <div class="avaliacao">
+            <div class="avaliacao-pagproduto">
                 @for($i=1; $i<=5; $i++)
                     <span>{{$i <= round($product->rating) ?  '★' : '☆' }}</span>                 
                 @endfor
                 <span>{{ $product->reviews_count }} reviews</span>
             </div>
-            
+            <div class="tamanho-pagproduto">
+                <div class="lista-tam">
+                    @foreach($product->sizes as $size)
+                    <button type="button">{{$size->name}}</button>
+                    @endforeach
+                </div>
+                <div class="quantidade">
+                    <button>-</button>
+                    <p>1</p>
+                    <button>+</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
