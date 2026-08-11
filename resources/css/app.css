@@ -144,6 +144,11 @@
 .contatovend h3{
     font-size: 25px;
 }
+.ct{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+} 
 .contatovend{
     display: flex;
     flex-direction: column;
@@ -160,6 +165,13 @@
 }
 .entregas h3,.dev h3{
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.imgvenda{
+    width: 20px;
+    height: 20px;
 }
 .navbar-branca {
     width: 100%;

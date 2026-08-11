@@ -57,7 +57,7 @@
                 </div>
                 <div class="contatovend">
                     <div class="contato">
-                    <h3>Contato</h3>
+                    <h3 class="ct"><img src="{{ asset('media/TelephoneFill.svg') }}" alt="telefone" class="imgvenda">Contato</h3>
                     <p>{{$product->user->name}}</p>
                     </div>
                     <div class="telefone">
@@ -67,11 +67,11 @@
                 </div>
                 <div class="entregas-devol">
                     <div class="entregas">
-                        <h3>Entregas Rapidas</h3>
+                        <h3><img src="{{ asset('media/BoxSeam.svg')}}" alt="caixa" class="imgvenda">Entregas Rapidas</h3>
                         <p>Enviamos seu pedido com <br> rapidez e segurança.</p>
                     </div>
                     <div class="dev">
-                        <h3>Devoluções Grátis</h3>
+                        <h3><img src="{{ asset('media/Arrow90degLeft.svg')}}" alt="seta90" class="imgvenda">Devoluções Grátis</h3>
                         <p>Solicite sua devolução de <br> forma simples e segura.</p>
                     </div>
                 </div>
