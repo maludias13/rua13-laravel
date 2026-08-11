@@ -45,6 +45,7 @@
             @error('photo')
                 <span class="erro">{{ $message }}</span>
             @enderror
+            <button type="submit">Salvar produto</button>
     </form>
 </body>
 </html>
