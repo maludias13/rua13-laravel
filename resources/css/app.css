@@ -92,9 +92,6 @@
 .tamanho-pagproduto h3{
     font-size: 25px;
 }
-.quantidade h3{
-    font-size: 25px;
-}
 .lista-tam{
     display: flex;
     gap: 10px;
@@ -104,6 +101,9 @@
     color: #fff;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
     border-radius: 5px;
+}
+.quantidade h3{
+    font-size: 25px;
 }
 .botoesqtd{
     display: flex;   
@@ -122,19 +122,27 @@
 .comprar-prod{
     display: flex;
     font-family: 'Roboto Semibold';
+    gap: 5px;
 }
+.adquirir{
+    background-color: #48217B;
+    color: #fff;
+    padding: 0.75rem 18rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.fav{
+    border: 1px solid #fff;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
 .descricaoprod h3{
     font-size: 25px;
 }
 .contatovend h3{
     font-size: 25px;
-}
-.adquirir{
-    background-color: #48217B;
-    color: #fff;
-}
-.fav{
-    border: 1px solid #fff;
 }
 .entregas-devol{
     display: flex;
