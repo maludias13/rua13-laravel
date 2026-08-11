@@ -20,7 +20,11 @@
         </div>
         <div class="conteudo-pagproduto">
             <div class="peca-preco">
-                <h1></h1>
+                <h3>{{$product->name}}</h3>
+                <h3>{{format_price($product->price)}}</h3>
+            </div>
+            <div class="avaliacao">
+                
             </div>
         </div>
     </div>
