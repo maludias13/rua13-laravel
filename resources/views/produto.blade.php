@@ -64,11 +64,11 @@
                 <div class="entregas-devol">
                     <div class="entregas">
                         <h3>Entregas Rapidas</h3>
-                        <p>Enviamos seu pedido com rapidez e segurança.</p>
+                        <p>Enviamos seu pedido com <br> rapidez e segurança.</p>
                     </div>
                     <div class="dev">
                         <h3>Devoluções Grátis</h3>
-                        <p>Solicite sua devolução de forma simples e segura.</p>
+                        <p>Solicite sua devolução de <br> forma simples e segura.</p>
                     </div>
                 </div>
             </div>
