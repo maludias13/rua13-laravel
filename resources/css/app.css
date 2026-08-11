@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.pagprodutos-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #0E0F11, #22242B, #25272F, #25272F, #2A2D36, #31343E, #2B2D36, #737991);
+    color: white;
+}
