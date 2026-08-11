@@ -35,6 +35,11 @@
             @error('price')
                 <span class="erro">{{ $message }}</span>
             @enderror
+             <label>Quantidade</label>
+            <input type="number" name="quantity" value="{{ old('quantity') }}">
+            @error('quantity')
+                <span class="erro">{{ $message }}</span>
+            @enderror
     </form>
 </body>
 </html>
