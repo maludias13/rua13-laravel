@@ -7,6 +7,12 @@
 </head>
 <body>
     <form method="POST" action="{{ route('produtos.store') }}" enctype="multipart/form-data">
+        @csrf
+        <label>Nome do Produto</label>
+        <input type="text" name="name" value="{{old ('name')}}" placeholder="Digite o nome do produto">
+        @error('name')
+        <span class="error">{{$message}}</span>
+        @enderror
     </form>
 </body>
 </html>
