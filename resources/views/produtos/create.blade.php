@@ -22,6 +22,9 @@
                     </option>
                 @endforeach
             </select>
+              @error('category_id')
+                <span class="erro">{{ $message }}</span>
+            @enderror
     </form>
 </body>
 </html>
