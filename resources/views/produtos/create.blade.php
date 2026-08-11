@@ -30,6 +30,11 @@
             @error('description')
                 <span class="erro">{{ $message }}</span>
             @enderror
+            <label>Preço</label>
+            <input type="number" step="0.01" name="price" value="{{ old('price') }}">
+            @error('price')
+                <span class="erro">{{ $message }}</span>
+            @enderror
     </form>
 </body>
 </html>
