@@ -35,9 +35,14 @@
             @error('price')
                 <span class="erro">{{ $message }}</span>
             @enderror
-             <label>Quantidade</label>
+            <label>Quantidade</label>
             <input type="number" name="quantity" value="{{ old('quantity') }}">
             @error('quantity')
+                <span class="erro">{{ $message }}</span>
+            @enderror
+            <label>Foto</label>
+            <input type="file" name="photo">
+            @error('photo')
                 <span class="erro">{{ $message }}</span>
             @enderror
     </form>
