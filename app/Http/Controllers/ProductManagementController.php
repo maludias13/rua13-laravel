@@ -67,7 +67,16 @@ class ProductManagementController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        if ($product->user_id !== auth()->id()) {
+        abort(403, 'Você não tem permissão para editar este produto.');
+        }
+
+        $categories = \App\Models\Category::all();
+
+        return view('produtos.edit', [
+        'product' => $product,
+        'categories' => $categories,
+        ]);
     }
 
     /**
@@ -75,7 +84,29 @@ class ProductManagementController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        if ($product->user_id !== auth()->id()) {
+        abort(403, 'Você não tem permissão para editar este produto.');
+        }
+
+        $request->validate([
+        'name' => 'required|string|max:255',
+        'description' => 'required|string',
+        'price' => 'required|numeric',
+        'quantity' => 'required|integer',
+        'category_id' => 'required|exists:categories,id',
+        'photo' => 'nullable|image|max:2048',
+        ]);
+
+        $data = $request->only(['name', 'description', 'price', 'quantity', 'category_id']);
+
+        if ($request->hasFile('photo')) {
+        $photoPath = $request->file('photo')->store('products', 'public');
+        $data['photo'] = basename($photoPath);
+        }
+
+        $product->update($data);
+
+        return redirect()->route('produtos.index')->with('status', 'Produto atualizado com sucesso!');
     }
 
     /**
