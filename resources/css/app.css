@@ -4,33 +4,27 @@
 
 @font-face {
     font-family: 'Roboto Semibold';
-    src: url('/statics/RobotoSlab-SemiBold.ttf') format('truetype');
- 
+    src: url('/static/RobotoSlab-SemiBold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Roboto Light';
-    src: url('/statics/RobotoSlab-Light.ttf') format('truetype');
- 
+    src: url('/static/RobotoSlab-Light.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Roboto Medium';
-    src: url('/statics/RobotoSlab-Medium.ttf') format('truetype');
- 
+    src: url('/static/RobotoSlab-Medium.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Roboto Regular';
-    src: url('/statics/RobotoSlab-Regular.ttf') format('truetype');
- 
+    src: url('/static/RobotoSlab-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Roboto Bold';
-    src: url('/statics/RobotoSlab-Bold.ttf') format('truetype');
-
+    src: url('/static/RobotoSlab-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Roboto EBold';
-    src: url('/statics/RobotoSlab-ExtraBold.ttf') format('truetype');
-  
+    src: url('/static/RobotoSlab-ExtraBold.ttf') format('truetype');
 }
 .font-roboto-semibold{
     font-family: 'Roboto Semibold';
@@ -59,7 +53,7 @@
     align-items: center;
 }
 .busca{
-    width: 75%;;
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -72,7 +66,6 @@
 .busca form {
     flex: 1;
 }
-
 .filtro-busca{
     width: 100%;
     border: none;
@@ -89,7 +82,6 @@
 .img-hero{
     width: 380px;
     height: 100%;
-
 }
 .texto-hero h1{
     font-family: 'Roboto Semibold';
@@ -105,7 +97,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-   
 }
 .ver-produtos{
     width: 100%;
@@ -115,7 +106,6 @@
     justify-content: space-between;
     padding: 1rem 0;
     font-family: 'Roboto Ebold';
-
 }
 .ver-produtos button{
     display: flex;
@@ -132,7 +122,6 @@
     flex-direction: column;
     justify-content: end;
 }
-
 .grid-produto img{
     width: 350px;
     height: 350px;
@@ -226,15 +215,145 @@
     padding: 10px;
     white-space: nowrap;
 }
-.inputs-i button{
-    background-color: #121212;
+.pagprodutos-container {
     width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #0E0F11, #22242B, #25272F, #25272F, #2A2D36, #31343E, #2B2D36, #737991);
     color: white;
-    font-size: 13px;
-    padding: 10px;
-    white-space: nowrap;
+    padding: 4rem 0;
+    display: flex;
 }
-
+.pagprodutos-container h3{
+    font-family: 'Roboto Semibold';
+}
+.pagprodutos-container p{
+    font-family: 'Roboto Light';
+}
+.prodfotos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.foto1{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.foto1 img{
+    width: 570px;
+    height: 50%;
+}
+.fotolados{
+    display: flex;
+    gap: 1rem;
+}
+.fotolados img{
+    width: 275px;
+    height: 100%;
+}
+.conteudo-pagproduto{
+    width: 100%;
+    height: 100%;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.peca-preco{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+}
+.avaliacao-pagproduto{
+    display: flex;
+    gap: 15px;
+}
+.tamanho-pagproduto h3{
+    font-size: 25px;
+}
+.lista-tam{
+    display: flex;
+    gap: 10px;
+}
+.lista-tam button{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+.quantidade h3{
+    font-size: 25px;
+}
+.botoesqtd{
+    display: flex;
+}
+.botoesqtd button{
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+.botoesqtd p{
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+.comprar-prod{
+    display: flex;
+    font-family: 'Roboto Semibold';
+    gap: 5px;
+}
+.adquirir{
+    background-color: #48217B;
+    color: #fff;
+    padding: 0.75rem 18rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.fav{
+    border: 1px solid #fff;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+.descricaoprod h3{
+    font-size: 25px;
+}
+.contatovend h3{
+    font-size: 25px;
+}
+.ct{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.contatovend{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.entregas-devol{
+    display: flex;
+    gap:20px;
+}
+.entregas,.dev{
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.entregas h3,.dev h3{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.imgvenda{
+    width: 20px;
+    height: 20px;
+}
 .navbar-branca {
     width: 100%;
     display: grid;
@@ -265,20 +384,18 @@
 .navbar > a {
     justify-self: center;
 }
-
 .icons-navb {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-self: end;
 }
-
 .icons-navb img {
     width: 30px;
     height: 30px;
 }
 .footer{
-     width: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: top;

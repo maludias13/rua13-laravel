@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Size;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -14,9 +15,10 @@ class ProductSeeder extends Seeder
         $masculino = Category::where('name', 'Masculino')->first()->id;
         $acessorios = Category::where('name', 'Acessórios')->first()->id;
         $userId = User::first()->id;
+        $allSizes = Size::pluck('id');
 
         $products = [
-            ['name' => 'Casaco rchangel', 'price' => 140, 'category_id' => $masculino, 'photo' => 'casaco-rchangel.jpg'],
+            ['name' => 'Camisa Polo', 'price' => 100, 'category_id' => $masculino, 'photo' => 'camisapolof.png', 'photos' => ['camisapolof.png', 'camisapoloc.png', 'camisapologola.png']],
             ['name' => 'Conjunto de colares', 'price' => 30, 'category_id' => $acessorios, 'photo' => 'conjunto-de-colares.jpg'],
             ['name' => 'Camisa Oversized', 'price' => 89, 'category_id' => $masculino, 'photo' => 'camisa-oversized.jpg'],
             ['name' => 'Óculos Punk', 'price' => 65, 'category_id' => $acessorios, 'photo' => 'oculos-punk.jpg'],
@@ -27,7 +29,7 @@ class ProductSeeder extends Seeder
         ];
 
         foreach ($products as $product) {
-            Product::create([
+            $newProduct = Product::create([
                 'user_id' => $userId,
                 'category_id' => $product['category_id'],
                 'name' => $product['name'],
@@ -35,7 +37,15 @@ class ProductSeeder extends Seeder
                 'price' => $product['price'],
                 'quantity' => 10,
                 'photo' => $product['photo'],
+                'rating' => rand(35, 50) / 10,
+                'reviews_count' => rand(10, 1000),
             ]);
+
+            $newProduct->sizes()->attach($allSizes);
+
+            foreach ($product['photos'] ?? [$product['photo'], $product['photo'], $product['photo']] as $photoFile) {
+                $newProduct->photos()->create(['photo' => $photoFile]);
+            }
         }
     }
 }
