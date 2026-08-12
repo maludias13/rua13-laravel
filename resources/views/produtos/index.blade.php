@@ -11,8 +11,10 @@
             <h2><img src="" alt="">Gerenciamento de Produtos</h2>
             <div class="busca-prod">
                 <input type="text" placeholder="Buscar por nome, categoria ou autor">
-                <img src="" alt="">
+                <button type="button"><img src="{{asset('media/filtro-de-busca.svg') }}" alt="filtro ">Filtro</button>
+                <button type="button"> + Criar Produto</button>
             </div>
+            
         </div>
     </div>
 </body>
