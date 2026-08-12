@@ -13,6 +13,10 @@
         <a href="#">DEVOLUÇÃO</a>
         <input type="text" placeholder="Busca por nome ou categoria">
     </div>
-    
+    <div class="prodvendido">
+        @foreach($sales as $sale)
+        <div class=""></div>
+        @endforeach
+    </div>
 </body>
 </html>
