@@ -14,7 +14,16 @@
                 <button type="button"><img src="{{asset('media/filtro-de-busca.svg') }}" alt="filtro ">Filtro</button>
                 <button type="button"> + Criar Produto</button>
             </div>
-            
+            <table class="tabela-produtos">
+                <thead>
+                    <th>ID</th>
+                    <th>PRODUTO</th>
+                    <th>CATEGORIA</th>
+                    <th>AUTOR</th>
+                    <th>AÇÕES</th>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
     </div>
 </body>
