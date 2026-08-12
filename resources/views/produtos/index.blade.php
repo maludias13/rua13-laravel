@@ -22,7 +22,17 @@
                     <th>AUTOR</th>
                     <th>AÇÕES</th>
                 </thead>
-                <tbody></tbody>
+                
+                <tbody>
+                    <tr><img src="{{ asset('storage/products' . $product->'photo'" alt="{{$product->name}}">{{$product->name}}</tr>
+                    <tr>{{$product->category_id}}</tr>
+                    <tr>{{$product->user->name}}</tr>
+                    <tr>
+                        <button><img src="" alt="vizualizar"></button>
+                        <button><img src="" alt="editar"></button>
+                        <button><img src="" alt="deletar"></button>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
