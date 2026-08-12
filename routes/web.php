@@ -3,7 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductManagementController;
+use App\Http\Controllers\SaleController;
 
+Route::get('/vendas', [SaleController::class, 'index'])->name('vendas.index');
 Route::get('/produtos/{product}/deletar', [ProductManagementController::class, 'confirmDelete'])->name('produtos.confirm-delete');
 Route::resource('produtos', ProductManagementController::class)->parameters(['produtos' => 'product']);
 Route::get('/', function () {
