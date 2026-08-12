@@ -26,6 +26,11 @@
             @error('category_id')
                 <span class="erro">{{ $message }}</span>
             @enderror
+            <label>Descrição</label>
+            <textarea name="description">{{ old('description', $product->description) }}</textarea>
+            @error('description')
+                <span class="erro">{{ $message }}</span>
+            @enderror
         </form>
     </div>
 </body>
