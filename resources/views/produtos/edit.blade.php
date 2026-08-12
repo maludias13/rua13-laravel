@@ -41,8 +41,13 @@
             @error('quantity')
                 <span class="erro">{{ $message }}</span>
             @enderror
-             <label>Foto atual</label>
+            <label>Foto atual</label>
             <img src="{{ asset('storage/products/' . $product->photo) }}" alt="{{ $product->name }}" style="width: 100px;">
+              <label>Trocar foto (opcional)</label>
+            <input type="file" name="photo">
+            @error('photo')
+                <span class="erro">{{ $message }}</span>
+            @enderror
         </form>
     </div>
 </body>
