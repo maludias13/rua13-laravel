@@ -12,6 +12,21 @@ class SaleSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+         $buyer = User::first();
+        $products = Product::all();
+
+        foreach ($products->take(5) as $product) {
+            $quantity = rand(1, 3);
+            $unitPrice = $product->price;
+
+            Sale::create([
+                'product_id' => $product->id,
+                'buyer_id' => $buyer->id,
+                'seller_id' => $product->user_id,
+                'quantity' => $quantity,
+                'unit_price' => $unitPrice,
+                'total_price' => $quantity * $unitPrice,
+            ]);
+        }
     }
 }
