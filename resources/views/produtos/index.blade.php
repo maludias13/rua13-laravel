@@ -12,7 +12,7 @@
             <div class="busca-prod">
                 <input type="text" placeholder="Buscar por nome, categoria ou autor">
                 <button type="button"><img src="{{asset('media/filtro-de-busca.svg') }}" alt="filtro ">Filtro</button>
-                <button type="button"> + Criar Produto</button>
+                <a href="{{ route('produtos.create')}}"><button type="button"> + Criar Produto</button></a>
             </div>
             <table class="tabela-produtos">
                 <thead>
@@ -22,16 +22,23 @@
                     <th>AUTOR</th>
                     <th>AÇÕES</th>
                 </thead>
-                
                 <tbody>
-                    <tr><img src="{{ asset('storage/products' . $product->'photo'" alt="{{$product->name}}">{{$product->name}}</tr>
-                    <tr>{{$product->category_id}}</tr>
-                    <tr>{{$product->user->name}}</tr>
-                    <tr>
-                        <button><img src="" alt="vizualizar"></button>
-                        <button><img src="" alt="editar"></button>
-                        <button><img src="" alt="deletar"></button>
+                     @foreach ($products as $product)
+                     <tr>
+                        <td>{{$product->id}}</td>
+                        <td>
+                        <img src="{{ asset('storage/products/' . $product->photo) }}" alt="{{ $product->name }}" width="40">
+                        {{ $product->name }}
+                        </td>
+                        <td>{{$product->category->name}}</td>
+                        <td>{{$product->user->name}}</td>
+                        <td>
+                        <a href=""><button><img src="" alt="vizualizar"></button></a>
+                        <a href="{{route('produtos.edit', $product->id)}}"><button><img src="" alt="editar"></button></a>
+                        <a href="{{route('produtos.confirm-delete', $product->id)}}"><button><img src="" alt="delete"></button></a>
+                    </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ProductManagementController extends Controller
 {
@@ -65,8 +66,8 @@ class ProductManagementController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
-    {
+    public function edit(Product $product)
+    {   
         if ($product->user_id !== auth()->id()) {
         abort(403, 'Você não tem permissão para editar este produto.');
         }
@@ -82,7 +83,7 @@ class ProductManagementController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Product $product)
     {
         if ($product->user_id !== auth()->id()) {
         abort(403, 'Você não tem permissão para editar este produto.');
@@ -112,8 +113,24 @@ class ProductManagementController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
-    {
-        //
+    public function confirmDelete(Product $product)
+{
+    if ($product->user_id !== auth()->id()) {
+        abort(403, 'Você não tem permissão para excluir este produto.');
     }
+
+    return view('produtos.destroy', ['product' => $product]);
+}
+    public function destroy(Product $product)
+{
+    if ($product->user_id !== auth()->id()) {
+        abort(403, 'Você não tem permissão para excluir este produto.');
+    }
+
+    Storage::disk('public')->delete('products/' . $product->photo);
+
+    $product->delete();
+
+    return redirect()->route('produtos.index')->with('status', 'Produto excluído com sucesso!');
+}
 }
