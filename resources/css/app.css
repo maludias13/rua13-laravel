@@ -1,3 +1,420 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Roboto Semibold';
+    src: url('/static/RobotoSlab-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('/static/RobotoSlab-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('/static/RobotoSlab-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('/static/RobotoSlab-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('/static/RobotoSlab-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto EBold';
+    src: url('/static/RobotoSlab-ExtraBold.ttf') format('truetype');
+}
+.font-roboto-semibold{
+    font-family: 'Roboto Semibold';
+}
+.font-roboto-medium{
+    font-family: 'Roboto Medium';
+}
+.font-roboto-regular{
+    font-family: 'Roboto Regular';
+}
+.font-roboto-bold{
+    font-family: 'Roboto Bold';
+}
+.font-roboto-ebold{
+    font-family: 'Roboto EBold';
+}
+.imagem-login1{
+    width: 100%;
+    height: 100%;
+}
+.hero-banner{
+    height: 30%;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.busca{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+    background-color: #D9D9D9;
+    border: 1px solid #737991;
+    border-radius: 50px;
+    padding-right: 10px;
+}
+.busca form {
+    flex: 1;
+}
+.filtro-busca{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+.conteudo-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5rem;
+}
+.img-hero{
+    width: 380px;
+    height: 100%;
+}
+.texto-hero h1{
+    font-family: 'Roboto Semibold';
+    font-size: 25px;
+}
+.texto-hero p{
+    font-family: 'Roboto Regular';
+    font-size: 16px;
+}
+.produtos{
+    width: 100%;
+    padding: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ver-produtos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-family: 'Roboto Ebold';
+}
+.ver-produtos button{
+    display: flex;
+    border: 1px solid black;
+}
+.container-produtos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.grid-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.grid-produto img{
+    width: 350px;
+    height: 350px;
+}
+.grid-produto button{
+    width: 40%;
+    background-color: #121212;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.ctd-produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto Ebold';
+}
+.promocao{
+    width: 100%;
+    height: 400px;
+    background-image: url('/media/produtospromocionais.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+}
+.promocao button{
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.text-i{
+    padding: 0 10rem;
+}
+.final-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+    overflow-x: hidden;
+}
+.colecoes-destaque{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colecoes-destaque img{
+    width: 45%;
+    height: 600px;
+    object-fit: cover;
+}
+.inscreva-se{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: 'Roboto Regular';
+    margin-top: 4rem;
+    padding: 0 3.75rem;
+}
+.inputs-i{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+}
+.inputs-i input{
+    border: 1px solid black;
+    font-size: 10px;
+    width: 300px;
+}
+.inputs-i input::placeholder{
+    color: black;
+}
+.inputs-i button{
+    background-color: #121212;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+    white-space: nowrap;
+}
+.pagprodutos-container {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #0E0F11, #22242B, #25272F, #25272F, #2A2D36, #31343E, #2B2D36, #737991);
+    color: white;
+    padding: 4rem 0;
+    display: flex;
+}
+.pagprodutos-container h3{
+    font-family: 'Roboto Semibold';
+}
+.pagprodutos-container p{
+    font-family: 'Roboto Light';
+}
+.prodfotos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.foto1{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.foto1 img{
+    width: 570px;
+    height: 50%;
+}
+.fotolados{
+    display: flex;
+    gap: 1rem;
+}
+.fotolados img{
+    width: 275px;
+    height: 100%;
+}
+.conteudo-pagproduto{
+    width: 100%;
+    height: 100%;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.peca-preco{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+}
+.avaliacao-pagproduto{
+    display: flex;
+    gap: 15px;
+}
+.tamanho-pagproduto h3{
+    font-size: 25px;
+}
+.lista-tam{
+    display: flex;
+    gap: 10px;
+}
+.lista-tam button{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+.quantidade h3{
+    font-size: 25px;
+}
+.botoesqtd{
+    display: flex;
+}
+.botoesqtd button{
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+.botoesqtd p{
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+.comprar-prod{
+    display: flex;
+    font-family: 'Roboto Semibold';
+    gap: 5px;
+}
+.adquirir{
+    background-color: #48217B;
+    color: #fff;
+    padding: 0.75rem 18rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.fav{
+    border: 1px solid #fff;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+.descricaoprod h3{
+    font-size: 25px;
+}
+.contatovend h3{
+    font-size: 25px;
+}
+.ct{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.contatovend{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.entregas-devol{
+    display: flex;
+    gap:20px;
+}
+.entregas,.dev{
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.entregas h3,.dev h3{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.imgvenda{
+    width: 20px;
+    height: 20px;
+}
+.navbar-branca {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    padding: 16px 48px;
+    font-family: 'Roboto Medium';
+}
+.navbar-preta {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    padding: 16px 48px;
+    font-family: 'Roboto Medium';
+    background-color: #121212;
+    color: #fff;
+}
+.navbar-nav {
+    display: flex;
+    gap: 24px;
+    justify-self: start;
+    flex-wrap: wrap;
+}
+.navlogo{
+    width: 200px;
+}
+.navbar > a {
+    justify-self: center;
+}
+.icons-navb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: end;
+}
+.icons-navb img {
+    width: 30px;
+    height: 30px;
+}
+.footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: top;
+    background-color: #121212;
+    color: white;
+    padding: 5rem 4rem 1rem 5rem;
+    font-family: 'Roboto Regular';
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.footer-social-icons{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    padding: 0 2rem;
+    width: 300px;
+    justify-self: end;
+}

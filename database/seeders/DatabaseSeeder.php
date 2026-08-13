@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Size;
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,6 +25,7 @@ class DatabaseSeeder extends Seeder
            $this->call([
             CategorySeeder::class,
             AdminSeeder::class,
+            SizeSeeder::class,
             ProductSeeder::class,
             SaleSeeder::class,
         ]);

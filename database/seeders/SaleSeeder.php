@@ -24,6 +24,7 @@ class SaleSeeder extends Seeder
 
             Sale::create([
                 'product_id' => $product->id,
+                'size_id' => $product->sizes()->inRandomOrder()->first()->id,
                 'buyer_id' => $buyer->id,
                 'seller_id' => $product->user_id,
                 'quantity' => $quantity,

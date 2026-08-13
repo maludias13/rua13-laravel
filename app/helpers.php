@@ -44,4 +44,14 @@ if (! function_exists('format_cep')) {
 
         return substr($cep, 0, 5).'-'.substr($cep, 5, 3);
     }
+    if (! function_exists('is_current_user_admin')) {
+    function is_current_user_admin(): bool
+    {
+        if (! array_key_exists('admin', config('auth.guards'))) {
+            return false;
+        }
+
+        return auth('admin')->check();
+    }
+    }
 }
