@@ -6,7 +6,10 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\landingpageController;
 use App\Http\Controllers\ProductManagementController;
 use App\Http\Controllers\SaleController;
+use App\Http\Controllers\AdminEmailController;
 
+Route::get('/admin/email', [AdminEmailController::class, 'create'])->name('admin.email.create');
+Route::post('/admin/email', [AdminEmailController::class, 'send'])->name('admin.email.send');
 Route::get('/landingpage', [landingpageController::class, 'index'])->name('landingpage');
 Route::get('/produto/{product}', [ProductController::class, 'show'])->name('produto.show');
 Route::get('/vendas', [SaleController::class, 'index'])->name('vendas.index');
