@@ -72,6 +72,12 @@
                 assunto: '',
                 mensagemHtml: '',
                 quill: null,
+             init() {
+                    this.quill = new Quill('#editor', { theme: 'snow' });
+                    this.quill.on('text-change', () => {
+                        this.mensagemHtml = this.quill.root.innerHTML;
+                    });
+            },
     </div>
 
 </body>
