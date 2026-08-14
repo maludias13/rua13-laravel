@@ -37,6 +37,13 @@
             <span class="error">{{$message}}</span>
             @enderror
         </div>
+        <div class="mensagem-email">
+             <div id="editor" style="height: 200px;"></div>
+                <input type="hidden" name="body" x-ref="bodyInput">
+                @error('body')
+                    <span class="erro">{{ $message }}</span>
+                @enderror
+        </div>
        </form>
     </div>
 </body>
