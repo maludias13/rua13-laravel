@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
 </head>
-<body>
+<body class="email">
      <div class="titulo-email">
             <h1>Enviar E-mail</h1>
         </div>

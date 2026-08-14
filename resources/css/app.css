@@ -426,7 +426,10 @@
     justify-self: end;
 }
 
-
+.email{
+    background-color: #0B0B0D;
+    color: #F5F5F5;
+}
 .email-container{
     width: 100%;
     height: 100%;
@@ -439,6 +442,15 @@
     justify-content: space-between;
     align-items: center;
 }
+.subtitulo-saverascunho h1{
+    font-family: 'Roboto Semibold';
+    font-size: 25px;
+}
+.subtitulo-saverascunho p{
+    font-family: 'Roboto Light';
+    font-size: 15px;
+}
+
 .destinatario-email, .assunto, .mensagem-email{
     display: flex;
     flex-direction: column;
