@@ -85,6 +85,17 @@
             prepararEnvio() {
                     this.$refs.bodyInput.value = this.quill.root.innerHTML;
             },
+
+            limpar() {
+                    this.destinatarioNome = '';
+                    this.destinatarioEmail = '';
+                    this.assunto = '';
+                    this.quill.setContents([]);
+                    this.mensagemHtml = '';
+                },
+            };
+        }
+    </script>
     </div>
 
 </body>
