@@ -24,6 +24,9 @@
             @foreach ($users as $user)
                         <option value="{{ $user->id }}" data-email="{{ $user->email }}">{{ $user->name }}</option>
             @endforeach
+            @error('user_id')
+                <span class="error">{{$message}}</span>
+            @enderror
         </select>
        </form>
     </div>
