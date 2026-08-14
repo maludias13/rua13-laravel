@@ -8,18 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
 </head>
 <body>
-    <x-admin-sidebar/>
-    <div class="email-container" x-data="emailForm">
-
-       <form method="POST" action="{{ route('admin.email.send') }}" @submit="prepararEnvio">
-        @csrf
-         <div class="titulo-email">
+     <div class="titulo-email">
             <h1>Enviar E-mail</h1>
         </div>
         <div class="subtitulo-saverascunho">
         <p>Enviar um e-mail para um usuário da plataforma</p>
         <button>Salvar Rascunho</button>
         </div>
+    <div class="email-container" x-data="emailForm">
+       <form method="POST" action="{{ route('admin.email.send') }}" @submit="prepararEnvio">
+        @csrf
         <div class="destinatario-email">
             <label for="">Destinatário</label>
                 <select name="user_id"  x-model="destinatarioNome" @change="atualizarDestinatario($event)">
@@ -40,6 +38,7 @@
             @enderror
         </div>
         <div class="mensagem-email">
+            <label for="">Mensagem</label>
              <div id="editor" style="height: 200px;"></div>
                 <input type="hidden" name="body" x-ref="bodyInput" placeholder="Escreva a sua mensagem aqui...">
                 @error('body')
