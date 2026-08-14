@@ -18,7 +18,8 @@
     <div class="email-container" x-data="emailForm">
        <form method="POST" action="{{ route('admin.email.send') }}" @submit="prepararEnvio">
         @csrf
-        <div class="destinatario-email">
+        <div class="formulario-email">
+            <div class="destinatario-email">
             <label for="">Destinatário</label>
                 <select name="user_id"  x-model="destinatarioNome" @change="atualizarDestinatario($event)">
                     <option value="">Selecione um Usuário</option>
@@ -48,6 +49,7 @@
         <div class="botoes-email">
                     <button type="button" @click="limpar">LIMPAR</button>
                     <button type="submit">ENVIAR E-MAIL</button>
+        </div>
         </div>
        </form>
        <div class="preview-email">
