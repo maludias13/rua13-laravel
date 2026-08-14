@@ -59,7 +59,7 @@
                     <p>Assunto: <span x-text="assunto || 'Assunto do e-mail'"></span></p>
                 </div>
                 <div class="preview-conteudo">
-                    <h2>RUA13</h2>
+                    <img src="{{ asset('media/logo-rua13branca.png')}}" alt="logo">
                     <p>Olá,</p>
                     <div x-html="mensagemHtml"></div>
                     <p>Atenciosamente,<br>Equipe RUA13</p>
