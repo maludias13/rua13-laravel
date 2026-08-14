@@ -82,6 +82,9 @@
                     const option = event.target.options[event.target.selectedIndex];
                     this.destinatarioEmail = option.dataset.email || '';
             },
+            prepararEnvio() {
+                    this.$refs.bodyInput.value = this.quill.root.innerHTML;
+            },
     </div>
 
 </body>
