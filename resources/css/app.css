@@ -489,7 +489,9 @@
     justify-content: end;
 }
 .formulario-email{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem
 }
 .preview-email{
     height: 400px;
@@ -497,4 +499,20 @@
     background-color: #1A1A1D;
     padding: 24px;
     border-radius: 8px;
+}
+.preview-email h3, p{
+    font-family: 'Roboto Regular';
+}
+.botoes-email {
+    display: flex;
+    gap: 15px;
+}
+.botoes-email button{
+    background-color: #5c2e9a;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-family: 'Roboto Medium';
+}
+.botoes-email button:hover{
+    background-color: #7C3AED;
 }
