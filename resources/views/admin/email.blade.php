@@ -78,6 +78,10 @@
                         this.mensagemHtml = this.quill.root.innerHTML;
                     });
             },
+            atualizarDestinatario(event) {
+                    const option = event.target.options[event.target.selectedIndex];
+                    this.destinatarioEmail = option.dataset.email || '';
+            },
     </div>
 
 </body>
