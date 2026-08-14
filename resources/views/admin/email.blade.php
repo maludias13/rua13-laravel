@@ -6,6 +6,16 @@
     <title>Enviar Email</title>
 </head>
 <body>
-    
+    <x admin-sidebar/>
+    <div class="email-container" x-data="emailForm">
+        <div class="titulo-email">
+            <h1>Enviar E-mail</h1>
+        </div>
+    <div class="subtitulo-saverascunho">
+        <p>Enviar um e-mail para um usuário da plataforma</p>
+        <button>Salvar Rascunho</button>
+    </div>
+   
+    </div>
 </body>
 </html>
