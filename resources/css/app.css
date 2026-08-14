@@ -437,6 +437,10 @@
     gap: 24px;
     align-items: flex-start;
 }
+.email-container label{
+        font-family: 'Roboto Regular';
+
+}
 .email-container form{
     flex: 2;
     min-width: 0;
@@ -471,6 +475,13 @@
 .destinatario-email, .assunto, .mensagem-email{
     display: flex;
     flex-direction: column;
+}
+
+.destinatario-email select, .assunto input, .destinatario-email option{
+    background-color: #1B1B1F;
+    color: #F5F5F5;
+
+    border-radius: 7px;
 }
 .botoes-email{
     display: flex;
