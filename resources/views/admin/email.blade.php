@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enviar Email</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
 </head>
 <body>
     <x admin-sidebar/>
@@ -39,7 +41,7 @@
         </div>
         <div class="mensagem-email">
              <div id="editor" style="height: 200px;"></div>
-                <input type="hidden" name="body" x-ref="bodyInput">
+                <input type="hidden" name="body" x-ref="bodyInput" placeholder="Escreva a sua mensagem aqui...">
                 @error('body')
                     <span class="erro">{{ $message }}</span>
                 @enderror
@@ -49,6 +51,18 @@
                     <button type="submit">ENVIAR E-MAIL</button>
         </div>
        </form>
+       <div class="preview-email">
+                <h3>Pré-visualização</h3>
+                <p>Para: <span x-text="destinatarioEmail || 'usuario@email.com'"></span></p>
+                <p>Assunto: <span x-text="assunto || 'Assunto do e-mail'"></span></p>
+
+                <div class="preview-conteudo">
+                    <h2>RUA13</h2>
+                    <p>Olá,</p>
+                    <div x-html="mensagemHtml"></div>
+                    <p>Atenciosamente,<br>Equipe RUA13</p>
+                </div>
+        </div>
     </div>
 </body>
 </html>
