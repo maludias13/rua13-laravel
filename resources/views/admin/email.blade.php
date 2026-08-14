@@ -18,16 +18,25 @@
         <p>Enviar um e-mail para um usuário da plataforma</p>
         <button>Salvar Rascunho</button>
         </div>
-        <label for="">Destinatário</label>
-        <select name="user_id"  x-model="destinatarioNome" @change="atualizarDestinatario($event)">
-            <option value="">Selecione um Usuário</option>
-            @foreach ($users as $user)
-                        <option value="{{ $user->id }}" data-email="{{ $user->email }}">{{ $user->name }}</option>
-            @endforeach
-            @error('user_id')
-                <span class="error">{{$message}}</span>
+        <div class="destinatario-email">
+            <label for="">Destinatário</label>
+                <select name="user_id"  x-model="destinatarioNome" @change="atualizarDestinatario($event)">
+                    <option value="">Selecione um Usuário</option>
+                    @foreach ($users as $user)
+                                <option value="{{ $user->id }}" data-email="{{ $user->email }}">{{ $user->name }}</option>
+                    @endforeach
+                    @error('user_id')
+                        <span class="error">{{$message}}</span>
+                    @enderror
+                </select>
+        </div>
+        <div class="assunto">
+            <label for="">Assunto</label>
+            <input type="text" name="subject" placeholder="Digite aqui o assunto" x-model="assunto">
+            @error('subject')
+            <span class="error">{{$message}}</span>
             @enderror
-        </select>
+        </div>
        </form>
     </div>
 </body>
