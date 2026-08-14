@@ -7,6 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
+    <x-navbar variant="branca"/>
     <div class="hero-banner">
        <div class="busca">
          <form method="GET" action="{{ route('landingpage') }}">
@@ -77,5 +78,6 @@
            </div>
         </div>
         </div>
+        <x-footer />
 </body>
 </html>
