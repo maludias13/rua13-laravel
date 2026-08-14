@@ -449,6 +449,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
+
 }
 .subtitulo-saverascunho h1{
     font-family: 'Roboto Semibold';
@@ -468,7 +470,11 @@
     align-items: center;
     justify-content: end;
 }
+.formulario-email{
+    height: 100%;
+}
 .preview-email{
+    height: 400px;
     flex: 2;
     background-color: #1A1A1D;
     padding: 24px;
