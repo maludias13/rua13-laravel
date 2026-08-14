@@ -475,6 +475,7 @@
 .destinatario-email, .assunto, .mensagem-email{
     display: flex;
     flex-direction: column;
+    gap: 6px;
 }
 
 .destinatario-email select, .assunto input, .destinatario-email option{
