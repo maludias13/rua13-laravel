@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
 </head>
 <body>
-    <x admin-sidebar/>
+    <x-admin-sidebar/>
     <div class="email-container" x-data="emailForm">
 
        <form method="POST" action="{{ route('admin.email.send') }}" @submit="prepararEnvio">

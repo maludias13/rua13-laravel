@@ -49,7 +49,7 @@
                         <p>{{$product->name}}</p>
                         <p>{{format_price($product->price)}}</p>
                         </div>
-                        <button>Ver produto</button>
+                        <a href="{{ route('produto.show', $product->id) }}"><button>Ver produto</button></a>
             </div>
             @endforeach
             </div>
