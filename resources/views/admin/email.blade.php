@@ -53,10 +53,11 @@
         </div>
        </form>
        <div class="preview-email">
-                <h3>Pré-visualização</h3>
-                <p>Para: <span x-text="destinatarioEmail || 'usuario@email.com'"></span></p>
-                <p>Assunto: <span x-text="assunto || 'Assunto do e-mail'"></span></p>
-
+                <div class="textoview">
+                    <div class="pretitulo"><h3>Pré-visualização</h3></div>
+                    <p>Para: <span x-text="destinatarioEmail || 'usuario@email.com'"></span></p>
+                    <p>Assunto: <span x-text="assunto || 'Assunto do e-mail'"></span></p>
+                </div>
                 <div class="preview-conteudo">
                     <h2>RUA13</h2>
                     <p>Olá,</p>

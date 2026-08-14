@@ -500,8 +500,21 @@
     padding: 24px;
     border-radius: 8px;
 }
+.textoview{
+    padding-left: 5px;
+    padding-bottom: 0.5rem;
+}
+.pretitulo{
+    padding-bottom: 1rem;
+}
 .preview-email h3, p{
     font-family: 'Roboto Regular';
+}
+.preview-conteudo{
+    padding: 8px;
+    background-color: #0B0B0D;
+    border-radius: 10px;
+    border: 0.5px solid #2B2D36; 
 }
 .botoes-email {
     display: flex;
