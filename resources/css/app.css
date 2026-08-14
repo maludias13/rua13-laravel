@@ -449,8 +449,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 1rem 1rem 0;
 
+}
+.subtitulo-saverascunho button{
+    border: 1px solid #fff;
+    font-family: 'Roboto Light';
+    font-size: 13px;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 .subtitulo-saverascunho h1{
     font-family: 'Roboto Semibold';
