@@ -63,6 +63,16 @@
                     <p>Atenciosamente,<br>Equipe RUA13</p>
                 </div>
         </div>
+           <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    <script>
+        function emailForm() {
+            return {
+                destinatarioNome: '',
+                destinatarioEmail: '',
+                assunto: '',
+                mensagemHtml: '',
+                quill: null,
     </div>
+
 </body>
 </html>
