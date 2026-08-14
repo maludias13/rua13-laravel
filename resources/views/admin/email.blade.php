@@ -44,6 +44,10 @@
                     <span class="erro">{{ $message }}</span>
                 @enderror
         </div>
+        <div class="botoes-email">
+                    <button type="button" @click="limpar">LIMPAR</button>
+                    <button type="submit">ENVIAR E-MAIL</button>
+        </div>
        </form>
     </div>
 </body>
