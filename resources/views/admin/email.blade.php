@@ -8,14 +8,24 @@
 <body>
     <x admin-sidebar/>
     <div class="email-container" x-data="emailForm">
-        <div class="titulo-email">
+
+       <form method="POST" action="{{ route('admin.email.send') }}" @submit="prepararEnvio">
+        @csrf
+         <div class="titulo-email">
             <h1>Enviar E-mail</h1>
         </div>
-    <div class="subtitulo-saverascunho">
+        <div class="subtitulo-saverascunho">
         <p>Enviar um e-mail para um usuário da plataforma</p>
         <button>Salvar Rascunho</button>
-    </div>
-   
+        </div>
+        <label for="">Destinatário</label>
+        <select name="user_id"  x-model="destinatarioNome" @change="atualizarDestinatario($event)">
+            <option value="">Selecione um Usuário</option>
+            @foreach ($users as $user)
+                        <option value="{{ $user->id }}" data-email="{{ $user->email }}">{{ $user->name }}</option>
+            @endforeach
+        </select>
+       </form>
     </div>
 </body>
 </html>
