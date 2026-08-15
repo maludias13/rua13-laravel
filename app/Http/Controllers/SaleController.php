@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Sale;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class SaleController extends Controller
 {
-        public function index(Request $request)
+        public function export(Request $request)
     {
         $search = $request->query('search');
         $dataInicial = $request->query('data_inicial');
@@ -28,6 +29,7 @@ class SaleController extends Controller
             ->latest()
             ->get();
 
-        return view('vendas.index', ['sales' => $sales]);
-    }
+        $pdf = Pdf::loadView('vendas.relatorio', ['sales' => $sales]);
+
+        return $pdf->download('relatorio-vendas.pdf');    }
 }
