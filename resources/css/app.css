@@ -429,7 +429,6 @@
 .email{
     background-color: #0B0B0D;
     color: #F5F5F5;
-    padding: 1rem;
 }
 .email-container{
     width: 100%;
@@ -444,6 +443,24 @@
 .email-container form{
     flex: 2;
     min-width: 0;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.admin{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.topo img{
+    width: 30px;
+    height: 30px;
+}
+.container-email{
+    padding: 1rem;
+    border-top: 1px solid #737991;
 }
 .titulo-email h1{
     font-family: 'Roboto Semibold';
@@ -481,7 +498,6 @@
 .destinatario-email select, .assunto input, .destinatario-email option{
     background-color: #1B1B1F;
     color: #F5F5F5;
-
     border-radius: 7px;
 }
 .botoes-email{

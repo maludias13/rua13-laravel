@@ -15,7 +15,8 @@
             <p>Administrador</p>
         </div>
     </div>
-     <div class="titulo-email">
+     <div class="container-email">
+        <div class="titulo-email">
             <h1>Enviar E-mail</h1>
         </div>
         <div class="subtitulo-saverascunho">
@@ -72,6 +73,7 @@
                     <p>Atenciosamente,<br>Equipe RUA13</p>
                 </div>
         </div>
+     </div>
            <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
     <script>
         function emailForm() {
