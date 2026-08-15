@@ -562,6 +562,9 @@
     border-top: 1px solid #737991;
     border-collapse: collapse;
 }
+.botoes-vendas{
+    padding-bottom: 1rem;
+}
 .botoes-inputv form{
     display: flex;
     align-items: center;
@@ -595,7 +598,7 @@
     padding-bottom: 0.5rem;
 }
 .titulo-vendas h3{
-    font-family: 'Roboto Regular';
+    font-family: 'Roboto Semibold';
     font-size: 33px;
 }
 .titulo-vendas p{
@@ -619,4 +622,9 @@
 .tabela-vendas td,
 .tabela-vendas th {
     padding: 1.25rem;
+    text-align: left;
+    vertical-align: middle;
+}
+.tabela-vendas img{
+    width: 50px;
 }
