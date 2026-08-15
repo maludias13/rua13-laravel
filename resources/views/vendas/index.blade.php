@@ -69,5 +69,8 @@
                 @endforelse
             </tbody>
     </table>
+    <div class="paginacao">
+    {{ $sales->appends(request()->query())->links() }}
+    </div>
 </body>
 </html>

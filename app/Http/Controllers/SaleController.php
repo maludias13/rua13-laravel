@@ -27,7 +27,7 @@ class SaleController extends Controller
             ->when($dataInicial, fn ($q) => $q->whereDate('created_at', '>=', $dataInicial))
             ->when($dataFinal, fn ($q) => $q->whereDate('created_at', '<=', $dataFinal))
             ->latest()
-            ->get();
+            ->paginate(5);
 
         return view('vendas.index', ['sales' => $sales]);
     }
