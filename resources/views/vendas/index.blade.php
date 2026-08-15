@@ -25,6 +25,7 @@
             <input type="date" name="data_inicial" value="{{ request('data_inicial') }}">
             <input type="date" name="data_final" value="{{ request('data_final') }}">
             <input type="text" name="search" placeholder="Busca por nome ou categoria" value="{{ request('search') }}">
+            <button type="submit">Filtrar</button>
             <a href="{{ route('vendas.export', request()->query()) }}"><img src="{{ asset('media/Phone.svg') }}" alt="">Exportar</a>
         </form>
         </div>  
