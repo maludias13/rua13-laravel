@@ -31,7 +31,16 @@
         </div>  
     </div>
     <table class="tabela-vendas">
-        
+        <thead>
+                <tr>
+                    <th>Pedido</th>
+                    <th>Produto</th>
+                    <th>Cliente</th>
+                    <th>Data</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
     </table>
 </body>
 </html>
