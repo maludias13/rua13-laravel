@@ -30,7 +30,8 @@
         </form>
         </div>  
     </div>
-    <table class="tabela-vendas">
+    <div class="tabela-v">
+        <table class="tabela-vendas">
         <thead>
                 <tr>
                     <th>Pedido</th>
@@ -71,6 +72,7 @@
     </table>
     <div class="paginacao">
     {{ $sales->appends(request()->query())->links() }}
+    </div>
     </div>
 </body>
 </html>
