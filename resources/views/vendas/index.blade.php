@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Historico de Vendas</title>
 </head>
 <body>
-    <h3>Suas vendas</h3>
+    <div class="topo">
+        <button><img src="{{ asset('media/list.svg')}}" alt="filtro"></button>
+        <div class="admin">
+            <img src="{{ asset('media/peoplebranca.svg')}}" alt="pessoa">
+            <p>Administrador</p>
+        </div>
+    </div>
+    <div class="vendas-container">
+        <h3 class="titulo-v">Historico de Vendas</h3>
     <div class="botoes-vendas">
-        <a href="#">ENTREGUES</a>
-        <a href="#">EM ANDAMENTO</a>
-        <a href="#">DEVOLUÇÃO</a>
-        <input type="text" placeholder="Busca por nome ou categoria">
+        <div class="botoes-inputv">
+                <a href="#">Data inicial</a>
+                <a href="#">Data Final</a>
+                <input type="text" placeholder="Busca por nome ou categoria">
+                <a href="#">Exportar</a>
+        </div>  
     </div>
     <div class="prodvendido">
         @forelse($sales as $sale)
@@ -34,6 +45,7 @@
             @empty
             <p>Nenhuma venda encontrada.</p>
         @endforelse
+    </div>
     </div>
 </body>
 </html>

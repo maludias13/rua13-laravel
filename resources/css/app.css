@@ -448,6 +448,8 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    background-color: #0B0B0D;
+    color: #F5F5F5;
 }
 .admin{
     display: flex;
@@ -548,4 +550,30 @@
 }
 .botoes-email button:hover{
     background-color: #7C3AED;
+}
+.vendas-container{
+    width: 100%;
+    height: 100%;
+    background-color: #0B0B0D;
+    color: #F5F5F5;
+    padding: 1rem;
+    border-top: 1px solid #737991;
+}
+.botoes-inputv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botoes-inputv a{
+    padding: 1rem;
+    border: 1px solid #737991;
+    border-radius: 5px;
+}
+.botoes-inputv input{
+    border: 1px solid #737991;
+    border-radius: 5px;
+}
+.titulo-v{
+    font-family: 'Roboto Regular';
+    font-size: 40px;
 }
