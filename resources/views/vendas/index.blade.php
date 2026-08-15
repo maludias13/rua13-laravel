@@ -30,6 +30,8 @@
         </form>
         </div>  
     </div>
-    
+    <table class="tabela-vendas">
+        
+    </table>
 </body>
 </html>
