@@ -8,6 +8,7 @@ use App\Http\Controllers\ProductManagementController;
 use App\Http\Controllers\SaleController;
 use App\Http\Controllers\AdminEmailController;
 
+Route::get('/vendas/exportar', [SaleController::class, 'export'])->name('vendas.export');
 Route::get('/admin/email', [AdminEmailController::class, 'create'])->name('admin.email.create');
 Route::post('/admin/email', [AdminEmailController::class, 'send'])->name('admin.email.send');
 Route::get('/landingpage', [landingpageController::class, 'index'])->name('landingpage');
