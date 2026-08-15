@@ -45,8 +45,7 @@
                 @forelse ($sales as $sale)
                     <tr>
                         <td>#{{ $sale->id }}</td>
-                        <div class="nomevenda">
-                            <td>
+                            <td class="nomevenda">
                             @if ($sale->product)
                                 <img src="{{ asset('media/' . $sale->product->photo) }}" alt="{{ $sale->product->name }}" width="30">
                                 {{ $sale->product->name }}
@@ -55,7 +54,6 @@
                             @endif
                         </td>
                         <td>{{ $sale->buyer->name ?? '-' }}</td>
-                        </div>
                         <td>{{ $sale->created_at->format('d/m/Y') }}</td>
                         <td>{{ format_price($sale->total_price) }}</td>
                         <td>
