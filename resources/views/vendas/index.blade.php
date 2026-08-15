@@ -22,9 +22,9 @@
     <div class="botoes-vendas">
         <div class="botoes-inputv">
         <form method="GET" action="{{ route('vendas.index') }}" class="botoes-inputv">
+            <input type="text" name="search" placeholder="Busca por nome ou categoria" value="{{ request('search') }}">
             <input type="date" name="data_inicial" value="{{ request('data_inicial') }}">
             <input type="date" name="data_final" value="{{ request('data_final') }}">
-            <input type="text" name="search" placeholder="Busca por nome ou categoria" value="{{ request('search') }}">
             <button type="submit">Filtrar</button>
             <a href="{{ route('vendas.export', request()->query()) }}"><img src="{{ asset('media/Phone.svg') }}" alt="">Exportar</a>
         </form>
