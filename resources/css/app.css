@@ -598,4 +598,11 @@
 .titulo-vendas p{
     font-family: 'Roboto Light';
 }
-
+.nomevenda{
+    display: flex;
+    gap: 8px;
+}
+.tabela-vendas{
+    width: 100%;
+    height: 100%;
+}
