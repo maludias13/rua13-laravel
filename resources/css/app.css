@@ -563,17 +563,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #737991;
 }
 .botoes-inputv a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
     padding: 1rem;
     border: 1px solid #737991;
     border-radius: 5px;
+    font-family: 'Roboto Regular';
+    background-color: #1B1B1F;
+
 }
-.botoes-inputv input{
+.botoes-inputv img{
+    width: 20px;
+    height: 20px;
+}
+.botoes-inputv input, a{
     border: 1px solid #737991;
     border-radius: 5px;
-}
-.titulo-v{
+    background-color: #1B1B1F;
     font-family: 'Roboto Regular';
-    font-size: 40px;
+
+}
+.titulo-vendas{
+    padding-bottom: 0.5rem;
+}
+.titulo-vendas h3{
+    font-family: 'Roboto Regular';
+    font-size: 33px;
+}
+.titulo-vendas p{
+    font-family: 'Roboto Light';
 }

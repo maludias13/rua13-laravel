@@ -15,13 +15,16 @@
         </div>
     </div>
     <div class="vendas-container">
-        <h3 class="titulo-v">Historico de Vendas</h3>
+        <div class="titulo-vendas">
+        <h3>Historico de Vendas</h3>
+        <p>Consulte todas as vendas realizadas</p>
+        </div>
     <div class="botoes-vendas">
         <div class="botoes-inputv">
-                <a href="#">Data inicial</a>
-                <a href="#">Data Final</a>
+                <a href="#"> <img src="{{ asset('media/CalendarCheck.svg') }}" alt="">Data inicial</a>
+                <a href="#"> <img src="{{ asset('media/CalendarCheck.svg') }}" alt="">Data Final</a>
                 <input type="text" placeholder="Busca por nome ou categoria">
-                <a href="#">Exportar</a>
+                <a href="#"><img src="{{ asset('media/Phone.svg') }}" alt="">Exportar</a>
         </div>  
     </div>
     <div class="prodvendido">
