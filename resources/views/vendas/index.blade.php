@@ -41,6 +41,33 @@
                     <th>Ações</th>
                 </tr>
             </thead>
+            <tbody>
+                                @forelse ($sales as $sale)
+                    <tr>
+                        <td>#{{ $sale->id }}</td>
+                        <td>
+                            @if ($sale->product)
+                                <img src="{{ asset('media/' . $sale->product->photo) }}" alt="{{ $sale->product->name }}" width="30">
+                                {{ $sale->product->name }}
+                            @else
+                                Produto removido
+                            @endif
+                        </td>
+                        <td>{{ $sale->buyer->name ?? '-' }}</td>
+                        <td>{{ $sale->created_at->format('d/m/Y') }}</td>
+                        <td>{{ format_price($sale->total_price) }}</td>
+                        <td>
+                            @if ($sale->product)
+                                <a href="{{ route('produto.show', $sale->product->id) }}">Ver Produto</a>
+                            @endif
+                            </td>
+                    </tr>
+                @empty
+                    <tr>
+                        <td colspan="6">Nenhuma venda encontrada.</td>
+                    </tr>
+                @endforelse
+            </tbody>
     </table>
 </body>
 </html>
