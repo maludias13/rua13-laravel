@@ -21,10 +21,12 @@
         </div>
     <div class="botoes-vendas">
         <div class="botoes-inputv">
-                <a href="#"> <img src="{{ asset('media/CalendarCheck.svg') }}" alt="">Data inicial</a>
-                <a href="#"> <img src="{{ asset('media/CalendarCheck.svg') }}" alt="">Data Final</a>
-                <input type="text" placeholder="Busca por nome ou categoria">
-                <a href="#"><img src="{{ asset('media/Phone.svg') }}" alt="">Exportar</a>
+        <form method="GET" action="{{ route('vendas.index') }}" class="botoes-inputv">
+            <input type="date" name="data_inicial" value="{{ request('data_inicial') }}">
+            <input type="date" name="data_final" value="{{ request('data_final') }}">
+            <input type="text" name="search" placeholder="Busca por nome ou categoria" value="{{ request('search') }}">
+            <a href="{{ route('vendas.export', request()->query()) }}"><img src="{{ asset('media/Phone.svg') }}" alt="">Exportar</a>
+        </form>
         </div>  
     </div>
     <div class="prodvendido">
