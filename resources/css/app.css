@@ -598,3 +598,14 @@
 .titulo-vendas p{
     font-family: 'Roboto Light';
 }
+.conteudo-venda{
+    display: flex;
+}
+.conteudo-venda img{
+    width: 120px;
+    height: 120px;
+}
+.np-venda{
+    display: flex;
+    justify-content: space-between;
+}

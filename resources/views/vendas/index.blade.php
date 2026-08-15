@@ -31,12 +31,14 @@
         </div>  
     </div>
     <div class="prodvendido">
+        <div class="conteudo-venda">
         @forelse($sales as $sale)
         @if($sale->product)
         <img src="{{ asset('media/' . $sale->product->photo) }}" alt="{{ $sale->product->name }}" width="40">
         @endif
-        <div class="conteudo-venda">
-            <div class="np-venda">
+        
+        <div class="dados-venda">
+                        <div class="np-venda">
                 <h3>{{$sale->product->name}}</h3>
                 <h3>{{format_price($sale->total_price)}}</h3>
             </div>
@@ -48,7 +50,8 @@
                 <a href="{{ route('produto.show', $sale->product->id) }}">Ver Produto</a>
             @endif
              </div>
-            @empty
+        </div>
+        @empty
             <p>Nenhuma venda encontrada.</p>
         @endforelse
     </div>
