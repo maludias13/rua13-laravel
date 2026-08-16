@@ -10,7 +10,7 @@
     <div class="sidebar">
         <div class="geren-prod-container">
             <div class="topo-g">
-                <div class="text-g">
+                <div class="texto-g">
                         <h1><img src="" alt="">Gerenciamento de Produtos</h1>
                         <p>Crie, edite ou exclua um produto da sua loja</p> 
                 </div>
@@ -20,8 +20,10 @@
                 </div>
             </div>
             <div class="busca-prod">
-                <input type="text" placeholder="Buscar por nome, categoria ou autor">
-                <button type="button"><img src="{{asset('media/filtro-de-busca.svg') }}" alt="filtro ">Filtro</button>
+                <form method="GET" action="{{ route('produtos.index') }}" class="busca-prod">
+                    <input type="text" name="search" placeholder="Buscar por nome, categoria ou autor" value="{{ request('search') }}">
+                    <button type="submit"><img src="{{ asset('media/filtro-de-busca.svg') }}" alt="filtro">Filtro</button>
+                </form>
                 <a href="{{ route('produtos.create')}}"><button type="button"> + Criar Produto</button></a>
 
             </div>
@@ -39,8 +41,13 @@
                             @foreach ($products as $product)
                             <tr>
                                 <td>{{$product->id}}</td>
-                                <td>
-                                <img src="{{ asset('storage/products/' . $product->photo) }}" alt="{{ $product->name }}" width="40">
+                                <td class="nomevenda">
+                                @if ($product)
+                                <img src="{{ asset('media/' . $product->photo) }}" alt="{{ $product->name }}" width="30">
+                                {{ $product->name }}
+                                @else
+                                    Produto removido
+                                @endif
                                 {{ $product->name }}
                                 </td>
                                 <td>{{$product->category->name}}</td>

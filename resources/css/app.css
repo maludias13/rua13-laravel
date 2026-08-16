@@ -456,6 +456,10 @@
     align-items: center;
     gap: 5px;
 }
+.admin img{
+    width: 30px;
+    height: 30px;
+}
 .topo img{
     width: 30px;
     height: 30px;
@@ -635,7 +639,16 @@
     height: 50px;
 }
 
-.topo-g{
+.topo-g{ 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+.texto-g h1{
+    font-family: 'Roboto Semibold';
+    font-size: 25px;
+}
+.texto-g p{
+    font-family: 'Roboto Light';
+    font-size: 15px;
 }

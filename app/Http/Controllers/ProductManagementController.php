@@ -10,9 +10,19 @@ class ProductManagementController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $products = auth()->user()->products()->latest()->paginate(5);
+        $search = $request->query('search');
+
+        $products = auth()->user()->products()
+        ->when($search, function ($query) use ($search) {
+            $query->where('name', 'like', "%{$search}%")
+                ->orWhereHas('category', function ($categoryQuery) use ($search) {
+                    $categoryQuery->where('name', 'like', "%{$search}%");
+                });
+        })
+        ->latest()
+        ->paginate(5);
         return view('produtos.index', ['products' => $products]);
     }
 
