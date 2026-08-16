@@ -624,6 +624,7 @@
 .tabela-vendas {
     width: 100%;
     border-collapse: collapse;
+    padding-left: 2rem;
 }
 .tabela-vendas thead{
     background-color: #22242B;
@@ -644,11 +645,12 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 1rem;
+    padding-top: 1.5rem;
 }
 .texto-g{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 .texto-g h1{
     font-family: 'Roboto Semibold';
@@ -661,6 +663,14 @@
 .busca-prod{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.busca-prod input, select{
+        border: 1px solid #737991;
+    border-radius: 5px;
+    font-family: 'Roboto Regular';
+    background-color: #1B1B1F;
 }
 .busca-prod button{
     background-color: #48217B;
@@ -669,3 +679,18 @@
     padding: 0.5rem;
     border-radius: 5px;
 }
+.acoes-table button{
+    border: 1px solid #737991;
+    border-radius: 8px;
+    background-color: #1B1B1F;
+    padding: 0.4rem;
+}
+.acoes-table img{
+    width: 25px;
+    height: 25px;
+}
+.tabela-vendas th:nth-child(1) { width: 7%; }
+.tabela-vendas th:nth-child(2) { width: 34%; }
+.tabela-vendas th:nth-child(3) { width: 16%; }
+.tabela-vendas th:nth-child(4) { width: 16%; }
+.tabela-vendas th:nth-child(5) { width: 10%; }

@@ -6,8 +6,7 @@
     <title>Gerenciar Produtos</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
-    <div class="sidebar">
+<body class="v">
         <div class="geren-prod-container">
             <div class="topo-g">
                 <div class="texto-g">
@@ -56,14 +55,13 @@
                                 @else
                                     Produto removido
                                 @endif
-                                {{ $product->name }}
                                 </td>
                                 <td>{{$product->category->name}}</td>
                                 <td>{{$product->user->name}}</td>
-                                <td>
-                                <a href=""><button><img src="" alt="vizualizar"></button></a>
-                                <a href="{{route('produtos.edit', $product->id)}}"><button><img src="" alt="editar"></button></a>
-                                <a href="{{route('produtos.confirm-delete', $product->id)}}"><button><img src="" alt="delete"></button></a>
+                                <td class="acoes-table">
+                                <a href=""><button><img src="{{ asset('media/Eye.svg') }}" alt="vizualizar"></button></a>
+                                <a href="{{route('produtos.edit', $product->id)}}"><button><img src="{{ asset('media/editl.svg') }}" alt="editar"></button></a>
+                                <a href="{{route('produtos.confirm-delete', $product->id)}}"><button><img src="{{ asset('media/Trash.svg') }}" alt="delete"></button></a>
                             </td>
                             </tr>
                             @endforeach
@@ -74,6 +72,5 @@
                     {{ $products->appends(request()->query())->links() }}
                 </div>
         </div>
-    </div>
 </body>
 </html>
