@@ -637,5 +637,5 @@
 
 .topo-g{
     display: flex;
+    flex-direction: row;
 }
-.
