@@ -55,6 +55,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="paginacao">
+                    {{ $products->appends(request()->query())->links() }}
+                </div>
         </div>
     </div>
 </body>
