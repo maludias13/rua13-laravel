@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="busca-prod">
-                <form method="GET" action="{{ route('produtos.index') }}" class="busca-prod">
+                <form method="GET" action="{{ route('produtos.index') }}">
                     <input type="text" name="search" placeholder="Buscar por nome, categoria ou autor" value="{{ request('search') }}">
                     <select name="categoria" onchange="this.form.submit()">
                         <option value="">Filtro por categoria</option>
@@ -32,7 +32,7 @@
                     </select>
 
                 </form>
-                <a href="{{ route('produtos.create')}}"><button type="button"> + Criar Produto</button></a>
+                <a href="{{ route('produtos.create')}}"><button type="button"> + Novo Produto</button></a>
 
             </div>
             

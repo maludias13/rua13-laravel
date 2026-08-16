@@ -643,6 +643,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.texto-g{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .texto-g h1{
     font-family: 'Roboto Semibold';
@@ -651,4 +657,15 @@
 .texto-g p{
     font-family: 'Roboto Light';
     font-size: 15px;
+}
+.busca-prod{
+    display: flex;
+    align-items: center;
+}
+.busca-prod button{
+    background-color: #48217B;
+    color: #fff;
+    font-family: 'Roboto Regular';
+    padding: 0.5rem;
+    border-radius: 5px;
 }

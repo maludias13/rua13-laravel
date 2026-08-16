@@ -27,7 +27,7 @@ class ProductManagementController extends Controller
                 $query->where('category_id', $categoryId);
             })
             ->latest()
-            ->paginate(10);
+            ->paginate(5);
 
         return view('produtos.index', [
             'products' => $products,
