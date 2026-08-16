@@ -552,8 +552,10 @@
     background-color: #7C3AED;
 }
 
-
-.vendas-container{
+.v{
+    background-color: #0B0B0D;
+}
+.vendas-container, .geren-prod-container{
     width: 100%;
     height: 100%;
     background-color: #0B0B0D;
@@ -597,9 +599,9 @@
 .titulo-vendas{
     padding-bottom: 0.5rem;
 }
-.titulo-vendas h3{
+.titulo-vendas h1{
     font-family: 'Roboto Semibold';
-    font-size: 33px;
+    font-size: 25px;
 }
 .titulo-vendas p{
     font-family: 'Roboto Light';
@@ -619,10 +621,12 @@
     width: 100%;
     border-collapse: collapse;
 }
-
+.tabela-vendas thead{
+    background-color: #22242B;
+}
 .tabela-vendas td,
 .tabela-vendas th {
-    padding: 1.25rem;
+    padding: 1.15rem;
     text-align: left;
     vertical-align: middle;
 }
@@ -630,3 +634,8 @@
     width: 50px;
     height: 50px;
 }
+
+.topo-g{
+    display: flex;
+}
+.

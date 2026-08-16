@@ -6,7 +6,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Historico de Vendas</title>
 </head>
-<body>
+<body class="v">
     <div class="topo">
         <button><img src="{{ asset('media/list.svg')}}" alt="filtro"></button>
         <div class="admin">
@@ -16,7 +16,7 @@
     </div>
     <div class="vendas-container">
         <div class="titulo-vendas">
-        <h3>Historico de Vendas</h3>
+        <h1>Historico de Vendas</h1>
         <p>Consulte todas as vendas realizadas</p>
         </div>
     <div class="botoes-vendas">
@@ -25,7 +25,6 @@
             <input type="text" name="search" placeholder="Busca por nome ou categoria" value="{{ request('search') }}">
             <input type="date" name="data_inicial" value="{{ request('data_inicial') }}">
             <input type="date" name="data_final" value="{{ request('data_final') }}">
-            <button type="submit">Filtrar</button>
             <a href="{{ route('vendas.export', request()->query()) }}"><img src="{{ asset('media/Phone.svg') }}" alt="">Exportar</a>
         </form>
         </div>  
