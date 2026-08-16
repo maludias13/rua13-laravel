@@ -13,17 +13,26 @@ class ProductManagementController extends Controller
     public function index(Request $request)
     {
         $search = $request->query('search');
+        $categoryId = $request->query('categoria');
+        $categories = \App\Models\Category::all();
 
         $products = auth()->user()->products()
-        ->when($search, function ($query) use ($search) {
-            $query->where('name', 'like', "%{$search}%")
-                ->orWhereHas('category', function ($categoryQuery) use ($search) {
-                    $categoryQuery->where('name', 'like', "%{$search}%");
-                });
-        })
-        ->latest()
-        ->paginate(5);
-        return view('produtos.index', ['products' => $products]);
+            ->when($search, function ($query) use ($search) {
+                $query->where('name', 'like', "%{$search}%")
+                    ->orWhereHas('category', function ($categoryQuery) use ($search) {
+                        $categoryQuery->where('name', 'like', "%{$search}%");
+                    });
+            })
+            ->when($categoryId, function ($query) use ($categoryId) {
+                $query->where('category_id', $categoryId);
+            })
+            ->latest()
+            ->paginate(10);
+
+        return view('produtos.index', [
+            'products' => $products,
+            'categories' => $categories,
+        ]);
     }
 
     /**

@@ -22,7 +22,15 @@
             <div class="busca-prod">
                 <form method="GET" action="{{ route('produtos.index') }}" class="busca-prod">
                     <input type="text" name="search" placeholder="Buscar por nome, categoria ou autor" value="{{ request('search') }}">
-                    <button type="submit"><img src="{{ asset('media/filtro-de-busca.svg') }}" alt="filtro">Filtro</button>
+                    <select name="categoria" onchange="this.form.submit()">
+                        <option value="">Filtro por categoria</option>
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}" {{ request('categoria') == $category->id ? 'selected' : '' }}>
+                                {{ $category->name }}
+                            </option>
+                        @endforeach
+                    </select>
+
                 </form>
                 <a href="{{ route('produtos.create')}}"><button type="button"> + Criar Produto</button></a>
 
