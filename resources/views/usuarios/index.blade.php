@@ -16,20 +16,21 @@
             </div>
             <table class="tabela-produtos">
                 <thead>
-                    <th>ID</th>
-                    <th>PRODUTO</th>
-                    <th>CATEGORIA</th>
-                    <th>AUTOR</th>
+                    <th>NOME</th>
+                    <th>EMAIL</th>
+                    <th>DATA DE NASCIMENTO</th>
+                    <th>CPF</th>
+                    <th>SALDO</th>
                     <th>AÇÕES</th>
                 </thead>
                 <tbody>
                      @foreach ($products as $product)
                      <tr>
-                        <td>{{$product->id}}</td>
                         <td>
                         <img src="{{ asset('storage/products/' . $product->photo) }}" alt="{{ $product->name }}" width="40">
                         {{ $product->name }}
                         </td>
+                        <td>{{$}}</td>
                         <td>{{$product->category->name}}</td>
                         <td>{{$product->user->name}}</td>
                         <td>
