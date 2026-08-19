@@ -11,7 +11,7 @@
     </a>
     <div class="icons-navb">
         <img src="{{ asset( $variant === 'preta' ? 'media/Heartbraca.svg' : 'media/Heartblack.svg') }}" alt="coracao">
-        <a href="{{ route('profile.show') }}">
+        <a href="{{ route('profile.perfil') }}">
             <img src="{{ asset($variant === 'preta' ? 'media/peoplebranca.svg' : 'media/peopleblack.svg') }}" alt="pessoa">
         </a>        
         <img src="{{ asset($variant === 'preta' ? 'media/CartCheckbranca.svg' : 'media/CartCheckblack.svg') }}" alt="carrinho">
