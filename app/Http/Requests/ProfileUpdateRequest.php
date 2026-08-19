@@ -34,6 +34,7 @@ class ProfileUpdateRequest extends FormRequest
         ],
         'phone' => ['nullable', 'string', 'max:20'],
         'birth_date' => ['nullable', 'date'],
+        'photo' => ['nullable', 'image', 'max:2048'],
         ];
     }
 }
