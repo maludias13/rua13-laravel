@@ -46,7 +46,13 @@
                 </div>
             @endif
         </div>
-        
+        <div>
+            <x-input-label for="cpf" :value="__('CPF')" />
+            <x-text-input id="cpf" name="cpf" type="text" class="mt-1 block w-full" :value="old('cpf', $user->cpf)" autocomplete="off" />
+            <x-input-error class="mt-2" :messages="$errors->get('cpf')" />
+        </div>
+
+       
         <div class="flex items-center gap-4">
             <x-primary-button>{{ __('Save') }}</x-primary-button>
 
