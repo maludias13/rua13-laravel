@@ -51,7 +51,11 @@
             <x-text-input id="cpf" name="cpf" type="text" class="mt-1 block w-full" :value="old('cpf', $user->cpf)" autocomplete="off" />
             <x-input-error class="mt-2" :messages="$errors->get('cpf')" />
         </div>
-
+        <div>
+            <x-input-label for="phone" :value="__('Telefone')" />
+            <x-text-input id="phone" name="phone" type="text" class="mt-1 block w-full" :value="old('phone', $user->phone)" autocomplete="off" />
+            <x-input-error class="mt-2" :messages="$errors->get('phone')" />
+        </div>
        
         <div class="flex items-center gap-4">
             <x-primary-button>{{ __('Save') }}</x-primary-button>
