@@ -57,4 +57,17 @@ class ProfileController extends Controller
 
         return Redirect::to('/');
     }
+    public function show(Request $request): View
+    {
+    return view('profile.perfil', [
+        'user' => $request->user(),
+    ]);
+    }
+
+    public function confirmDelete(Request $request): View
+    {
+        return view('profile.delete', [
+            'user' => $request->user(),
+        ]);
+    }
 }
