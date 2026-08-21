@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Roboto Semibold';
+    src: url('/static/RobotoSlab-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('/static/RobotoSlab-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('/static/RobotoSlab-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('/static/RobotoSlab-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('/static/RobotoSlab-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto EBold';
+    src: url('/static/RobotoSlab-ExtraBold.ttf') format('truetype');
+}
+.font-roboto-semibold{
+    font-family: 'Roboto Semibold';
+}
+.font-roboto-medium{
+    font-family: 'Roboto Medium';
+}
+.font-roboto-regular{
+    font-family: 'Roboto Regular';
+}
+.font-roboto-bold{
+    font-family: 'Roboto Bold';
+}
+.font-roboto-ebold{
+    font-family: 'Roboto EBold';
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #0E0F11;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-container {
+    width: 80%;
+    min-height: 80%;
+}
+.meu-perfil{
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto Semibold';
+    align-items: center;
+    font-size: 20px;
+    gap: 5px;
+}
+.topo-dadosp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bts-edit-dashboard a{
+    border: 1px solid #48217B;
+    color: #48217B;
+
+}
