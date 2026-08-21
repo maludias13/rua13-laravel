@@ -16,6 +16,17 @@
         @endif
 
         <div class="dados-perfil">
+            <div class="topo-dadosp">
+            <h3>Dados Pessoais</h3>
+                <div class="bts-edit-dashboard">
+                    <a href="{{ route('profile.edit') }}"><button type="button">Editar</button></a>
+                    @if (auth()->user()->is_admin)
+                    <a href="{{ route('produtos.index') }}">
+                        <button type="button">Ir para o Dashboard</button>
+                    </a>
+                    @endif
+                </div>
+            </div>
             <p><strong>Nome:</strong> {{ $user->name }}</p>
             <p><strong>E-mail:</strong> {{ $user->email }}</p>
             <p><strong>CPF:</strong> {{ $user->cpf ? format_cpf($user->cpf) : 'Não informado' }}</p>
@@ -32,10 +43,7 @@
             @endforelse
         </div>
 
-        <div class="botoes-perfil">
-            <a href="{{ route('profile.edit') }}"><button type="button">Editar</button></a>
-            <a href="{{ route('profile.confirm-delete') }}"><button type="button">Excluir Conta</button></a>
-        </div>
+
     </div>
 
 </body>
