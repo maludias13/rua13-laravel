@@ -32,11 +32,13 @@
                     @endif
                 </div>
             </div>
+            <div class="dados-user">
             <p><strong>Nome:</strong> {{ $user->name }}</p>
             <p><strong>E-mail:</strong> {{ $user->email }}</p>
             <p><strong>CPF:</strong> {{ $user->cpf ? format_cpf($user->cpf) : 'Não informado' }}</p>
             <p><strong>Telefone:</strong> {{ $user->phone ? format_phone($user->phone) : 'Não informado' }}</p>
             <p><strong>Data de nascimento:</strong> {{ $user->birth_date ? \Carbon\Carbon::parse($user->birth_date)->format('d/m/Y') : 'Não informado' }}</p>
+            </div>
         </div>
 
         <div class="enderecos-perfil">

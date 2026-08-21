@@ -65,11 +65,18 @@ html, body {
     font-size: 35px;
     gap: 5px;
 }
-
+.dados-perfil{
+    border: 1px solid #737991;
+    border-radius: 7px;
+}
 .topo-dadosp{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #737991;
+    padding: 1rem 2rem;
+
 }
 .topo-dadosp h3{
     font-family: 'Roboto Medium';
@@ -80,4 +87,15 @@ html, body {
     color: #48217B;
     font-family: 'Roboto Regular';
     padding: 5px;
+}
+.dados-user{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 30px;
+}
+.dados-user strong, .dados-user p{
+    padding: 1rem;
 }
