@@ -42,12 +42,16 @@
         </div>
 
         <div class="enderecos-perfil">
-            <h3>Endereços</h3>
-            @forelse ($user->addresses as $address)
-                <p>{{ $address->label ?? 'Endereço' }}: {{ $address->street }}, {{ $address->number }} - {{ $address->neighborhood }}, {{ $address->city }}/{{ $address->state }}</p>
-            @empty
-                <p>Nenhum endereço cadastrado.</p>
-            @endforelse
+            <div class="titulo-endereco">
+                 <h3>Endereços</h3>
+            </div>
+            <div class="ctd-endereco">
+                @forelse ($user->addresses as $address)
+                    <p>{{ $address->label ?? 'Endereço' }}: {{ $address->street }}, {{ $address->number }} - {{ $address->neighborhood }}, {{ $address->city }}/{{ $address->state }}</p>
+                @empty
+                    <p>Nenhum endereço cadastrado.</p>
+                @endforelse
+            </div>
         </div>
 
 

@@ -56,6 +56,9 @@ html, body {
 .perfil-container {
     width: 80%;
     min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .meu-perfil{
     width: 100%;
@@ -78,7 +81,7 @@ html, body {
     padding: 1rem 2rem;
 
 }
-.topo-dadosp h3{
+.titulo-endereco h3,.topo-dadosp h3{
     font-family: 'Roboto Medium';
     font-size: 20px;
 }
@@ -98,4 +101,15 @@ html, body {
 }
 .dados-user strong, .dados-user p{
     padding: 1rem;
+}
+.enderecos-perfil{
+    border: 1px solid #737991;
+        border-radius: 7px;
+}
+.titulo-endereco{
+    border-bottom: 1px solid #737991;
+    padding: 1rem 2rem;
+}
+.ctd-endereco{
+    padding: 1rem 2rem;
 }
