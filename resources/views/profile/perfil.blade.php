@@ -9,7 +9,12 @@
 <body>
 
     <div class="perfil-container">
-        <h1>Meu Perfil</h1>
+        <div class="meu-perfil">
+             @if ($user->photo)
+                <img src="{{ asset('storage/profile-photos/' . $user->photo) }}" alt="Foto atual" width="80" class="mt-2 mb-2 rounded-full">
+            @endif
+            <h1>Meu Perfil</h1>  
+        </div>
 
         @if (session('status') === 'profile-updated')
             <p class="mensagem-sucesso">Perfil atualizado com sucesso!</p>
@@ -22,7 +27,7 @@
                     <a href="{{ route('profile.edit') }}"><button type="button">Editar</button></a>
                     @if (auth()->user()->is_admin)
                     <a href="{{ route('produtos.index') }}">
-                        <button type="button">Ir para o Dashboard</button>
+                        <button type="button"> Dashboard</button>
                     </a>
                     @endif
                 </div>

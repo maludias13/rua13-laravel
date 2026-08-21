@@ -17,7 +17,7 @@
                     <img src="{{ asset('media/peoplebranca.svg')}}" alt="pessoa">
                     <p>Administrador</p>
                 </div>
-            </div>
+            </div> 
             <div class="busca-prod">
                 <form method="GET" action="{{ route('produtos.index') }}">
                     <input type="text" name="search" placeholder="Buscar por nome, categoria ou autor" value="{{ request('search') }}">
