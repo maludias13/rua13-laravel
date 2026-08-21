@@ -62,16 +62,22 @@ html, body {
     display: flex;
     font-family: 'Roboto Semibold';
     align-items: center;
-    font-size: 20px;
+    font-size: 35px;
     gap: 5px;
 }
+
 .topo-dadosp{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.topo-dadosp h3{
+    font-family: 'Roboto Medium';
+    font-size: 20px;
+}
 .bts-edit-dashboard a{
     border: 1px solid #48217B;
     color: #48217B;
-
+    font-family: 'Roboto Regular';
+    padding: 5px;
 }
